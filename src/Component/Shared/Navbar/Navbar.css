@@ -1,12 +1,16 @@
 /* Navbar Styles */
 
 .navbar {
+  position: sticky !important;
+  top: 0;
   background-color:  #002060;
   color: #fff;
   padding: 10px;
+  z-index: 100;
 }
 
 .navContainer {
+  
   display: flex;
   align-items: center;
   justify-content: space-between;

@@ -1,50 +1,48 @@
 import React from 'react';
-import { Carousel } from 'react-carousel-minimal';
-import './HomeComponent.css'; // Import a separate CSS file for component-specific styles
+import './HomeComponent.css';
+import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/scrollbar';
 
 const HomeComponent = () => {
-  // const data = [
-   
-  // ];
-
-  // const captionStyle = {
-  //   fontSize: '2em',
-  //   fontWeight: 'bold',
-  // };
-
-  // const slideNumberStyle = {
-  //   fontSize: '20px',
-  //   fontWeight: 'bold',
-  // };
-
   return (
-    <div className="App">
-      {/* <div className="fullscreen-carousel"> 
-        <div style={{ padding: "0 20px" }}>
-          <Carousel
-            data={data}
-            time={2000}
-            width="100%" 
-            height="100vh" 
-            captionStyle={captionStyle}
-            radius="10px"
-            slideNumber={true}
-            slideNumberStyle={slideNumberStyle}
-            captionPosition="bottom"
-            automatic={true}
-            dots={true}
-            pauseIconColor="white"
-            pauseIconSize="40px"
-            slideBackgroundColor="darkgrey"
-            slideImageFit="cover"
-            thumbnailWidth="100px"
-            style={{
-              textAlign: "center",
-              margin: "0 auto",
-            }}
-          />
-        </div>
-      </div> */}
+    <div>
+      <Swiper
+        // install Swiper modules
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={50}
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+        // scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log('slide change')}
+        autoplay={true} // Enable autoplay
+        delay={2000} // Set autoplay delay to 2 seconds
+      >
+        <SwiperSlide>
+          <div className='sliderOne'>
+              <h1 className='text-white slideOneHead text-center'>Guiding People And Organizations <br/> Towards Excellence</h1>
+          </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className='sliderTwo'>
+                <h1 className='text-white slideOneHead text-center'>Operational excellence through <br/> continuous improvement</h1>
+            </div>
+        </SwiperSlide>
+        <SwiperSlide>
+            <div className='sliderThree'>
+                <h1 className='text-white slideOneHead text-center'>Customized solutions for <br/> your business pain points</h1>
+            </div></SwiperSlide>
+       
+     
+      </Swiper>
     </div>
   );
 };
