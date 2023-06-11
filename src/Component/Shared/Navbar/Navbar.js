@@ -24,7 +24,7 @@ const NavBar = () => {
   return (
     <nav className="navbar">
       <div className="container mx-auto navContainer">
-        <div>
+        <div className='-mt-[43px]'>
           <img src="https://i.ibb.co/yWx2LpH/navLogo.png" alt="Mind WorksBd Navbar Logo" className='w-[300px]'/>
         </div>
         <div className={`navbar-toggle ${isOpen ? 'open' : ''}`} onClick={toggleNavbar}>
