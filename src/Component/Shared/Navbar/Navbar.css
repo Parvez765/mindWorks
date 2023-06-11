@@ -46,6 +46,7 @@
   color: #fff;
   text-decoration: none;
   padding: 5px;
+  font-size: 22px;
 }
 
 .dropdown-toggle {
@@ -53,6 +54,7 @@
   border: none;
   color: #fff;
   cursor: pointer;
+  font-size: 22px;
 }
 
 .dropdown-menu {

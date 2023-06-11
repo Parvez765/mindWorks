@@ -9,12 +9,12 @@ const TopNav = () => {
                     <div className='flex items-center gap-[20px]'>
                         <div className='flex items-center gap-[8px]'>
                             <FaPhoneAlt className='text-white' />
-                        <a href='tel:+91 9629830350' className='text-white'>+91 9629830350</a>
+                        <a href='tel:+91 9629830350' className='text-white text-[12px]'>+91 9629830350</a>
                         </div>
                         <div>
                             <div className='flex items-center gap-[8px]'>
                                 <FaEnvelopeOpen className='text-white' />
-                                <a href="mailto:info@mindworksbd.com" class="text-white">info@mindworksbd.com</a>
+                                <a href="mailto:info@mindworksbd.com" class="text-white  text-[12px]">info@mindworksbd.com</a>
 
                             </div>
                         </div>
