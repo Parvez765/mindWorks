@@ -1,11 +1,11 @@
 /* Navbar Styles */
 
 .navbar {
-  position: sticky !important;
-  top: 0;
+  position: relative;
+  /* top: 0; */
   background-color:  #002060;
   color: #fff;
-  padding-bottom: 12px;
+  padding-bottom: 26px;
   z-index: 100;
 }
 
@@ -47,7 +47,24 @@
   text-decoration: none;
   padding: 5px;
   font-size: 22px;
+  transition: 0.4s ease-in-out;
 }
+.nav-links{
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 22px;
+  transition: 0.4s ease-in-out;
+}
+.nav-links:hover{
+  color: #002060
+}
+
+
+.nav-link:hover{
+  color: #006AAC
+}
+
 
 .dropdown-toggle {
   background: none;
@@ -55,12 +72,17 @@
   color: #fff;
   cursor: pointer;
   font-size: 22px;
+  transition: 0.4s ease-in-out;
+}
+
+.serviceToggle:hover{
+  color:#006AAC
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
-  background-color: #002060;
+  background-color: #006AAC;
   border-radius: 8px;
   padding: 20px;
 }
@@ -68,6 +90,8 @@
 .dropdown-menu.open {
   display: block;
 }
+
+
 
 .navbar-toggle {
   display: none;
@@ -82,6 +106,18 @@
   height: 3px;
   background-color: #fff;
   margin-bottom: 5px;
+}
+.appoinmentBtn{
+  border: 2px solid #006AAC;
+  background-color: #006AAC;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 22px;
+  transition: 0.4s ease-in-out;
+}
+.appoinmentBtn:hover{
+  border: 2px solid white;
+  color: white;
 }
 
 @media (max-width: 768px) {

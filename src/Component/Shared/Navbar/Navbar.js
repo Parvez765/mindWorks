@@ -4,6 +4,7 @@ import { FaAngleDown } from "react-icons/fa";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [activeDropdown, setActiveDropdown] = useState(null);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -13,18 +14,18 @@ const NavBar = () => {
     setIsOpen(false);
   };
 
-  const handleMouseEnter = () => {
-    setIsOpen(true);
+  const handleMouseEnter = (dropdown) => {
+    setActiveDropdown(dropdown);
   };
 
   const handleMouseLeave = () => {
-    setIsOpen(false);
+    setActiveDropdown(null);
   };
 
   return (
     <nav className="navbar">
       <div className="container mx-auto navContainer">
-        <div className='-mt-[43px]'>
+        <div className='-mt-[45px]'>
           <img src="https://i.ibb.co/yWx2LpH/navLogo.png" alt="Mind WorksBd Navbar Logo" className='w-[300px]'/>
         </div>
         <div className={`navbar-toggle ${isOpen ? 'open' : ''}`} onClick={toggleNavbar}>
@@ -32,40 +33,49 @@ const NavBar = () => {
           <span></span>
           <span></span>
         </div>
-        <div className={`navbar-menu ${isOpen ? 'open' : ''}`} onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
+        <div className={`navbar-menu ${isOpen ? 'open' : ''}`} onMouseLeave={handleMouseLeave}>
           <ul className="navbar-nav">
-            <li className="nav-item dropdown">
+            <li
+              className={`nav-item dropdown ${activeDropdown === 'services' ? 'active' : ''}`}
+              onMouseEnter={() => handleMouseEnter('services')}
+            >
               <button 
-                className="dropdown-toggle flex items-center gap-[6px]"
+                className="dropdown-toggle serviceToggle flex items-center gap-[6px]"
                 onClick={toggleNavbar}
                 onBlur={() => setIsOpen(false)}
               >
                 Services <FaAngleDown/>
               </button>
-              <ul className={`dropdown-menu ${isOpen ? 'open' : ''}`}>
+              <ul className={`dropdown-menu ${activeDropdown === 'services' ? 'open' : ''}`}>
                 <li className="nav-item">
-                  <a href="#service1" className="nav-link" onClick={handleLinkClick}>
+                  <a href="#service1" className="nav-links" onClick={handleLinkClick}>
                     Consulting
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="#service2" className="nav-link" onClick={handleLinkClick}>
+                  <a href="#service2" className="nav-links" onClick={handleLinkClick}>
                     MSI
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a href="#service3" className="nav-link" onClick={handleLinkClick}>
+                  <a href="#service3" className="nav-links" onClick={handleLinkClick}>
                     Training
                   </a>
                 </li>
               </ul>
             </li>
-            <li className="nav-item">
+            <li
+              className={`nav-item ${activeDropdown === 'about' ? 'active' : ''}`}
+              onMouseEnter={() => handleMouseEnter('about')}
+            >
               <a href="#about" className="nav-link" onClick={handleLinkClick}>
                 Seed
               </a>
             </li>
-            <li className="nav-item">
+            <li
+              className={`nav-item ${activeDropdown === 'contact' ? 'active' : ''}`}
+              onMouseEnter={() => handleMouseEnter('contact')}
+            >
               <a href="#contact" className="nav-link" onClick={handleLinkClick}>
                 LEAN Transformation
               </a>
@@ -81,6 +91,9 @@ const NavBar = () => {
               </a>
             </li>
           </ul>
+        </div>
+        <div className='ml-[16px]'>
+          <button className='appoinmentBtn'>Schedule a call</button>
         </div>
       </div>
     </nav>

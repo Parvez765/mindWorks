@@ -3,6 +3,7 @@ import './HomeComponent.css';
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Autoplay } from 'swiper';
 
 // Import Swiper styles
 import 'swiper/css';
@@ -10,12 +11,15 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
+SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
+
+
 const HomeComponent = () => {
   return (
     <div>
       <Swiper
         // install Swiper modules
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+       
         spaceBetween={50}
         slidesPerView={1}
         navigation
@@ -23,8 +27,7 @@ const HomeComponent = () => {
         // scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}
         onSlideChange={() => console.log('slide change')}
-        autoplay={true} // Enable autoplay
-        delay={2000} // Set autoplay delay to 2 seconds
+        autoplay={{ delay: 2000, disableOnInteraction: false }}
       >
         <SwiperSlide>
           <div className='sliderOne'>
