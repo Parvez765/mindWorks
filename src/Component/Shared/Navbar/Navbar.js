@@ -77,7 +77,7 @@ const NavBar = () => {
               onMouseEnter={() => handleMouseEnter('contact')}
             >
               <a href="#contact" className="nav-link" onClick={handleLinkClick}>
-                LEAN Transformation
+                Lean Transformation
               </a>
             </li>
             <li className="nav-item">
