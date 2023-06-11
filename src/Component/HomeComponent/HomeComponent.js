@@ -28,17 +28,17 @@ const HomeComponent = () => {
       >
         <SwiperSlide>
           <div className='sliderOne'>
-              <h1 className='text-white slideOneHead text-center'>Guiding People And Organizations <br/> Towards Excellence</h1>
+              <h1 className='text-white slideOneHead text-[30px] lg:text-[50px] text-center'>Guiding People And Organizations <br/> Towards Excellence</h1>
           </div>
         </SwiperSlide>
         <SwiperSlide>
             <div className='sliderTwo'>
-                <h1 className='text-white slideOneHead text-center'>Operational excellence through <br/> continuous improvement</h1>
+                <h1 className='text-white slideOneHead  text-[30px] lg:text-[50px] text-center'>Operational excellence through <br/> continuous improvement</h1>
             </div>
         </SwiperSlide>
         <SwiperSlide>
             <div className='sliderThree'>
-                <h1 className='text-white slideOneHead text-center'>Customized solutions for <br/> your business pain points</h1>
+                <h1 className='text-white slideOneHead  text-[30px] lg:text-[50px] text-center'>Customized solutions for <br/> your business pain points</h1>
             </div></SwiperSlide>
        
      
