@@ -1,0 +1,11 @@
+.imgContainer{
+    background-color: #006AAC;
+    border-radius: 30%;
+    padding: 20px;
+}
+.uspText{
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 8px;
+    color: #002060;
+}

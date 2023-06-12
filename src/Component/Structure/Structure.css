@@ -1,0 +1,52 @@
+.ourServiceText{
+    font-size: 50px;
+    margin-top: 15px;
+    font-weight: 700;
+    color: white;
+}
+.serviceBg{
+    background-color: #002060;
+    padding: 50px;
+    color: white;
+}
+
+.textContainer{
+    background-color: #006AAC;
+    /* height: auto; */
+    width: 300px;
+    display: block;
+    margin: auto;
+    padding: 10px;
+    height: 80px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.textContainer:hover{
+    background-color: #359ee0;
+    cursor: pointer;
+}
+
+
+.textOne{
+    font-weight: 700;
+    color: #fff;
+}
+.servicePara{
+    background-color: white;
+    color: #006AAC;
+    width: 400px;
+    display: block;
+    margin: auto;
+    font-size: 22px;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-in-out;
+}
+.servicePara:hover{
+    background-color: rgb(235, 233, 233);
+    cursor: pointer;
+}
+
+.servicePara p{
+    color: #006AAC;
+}
