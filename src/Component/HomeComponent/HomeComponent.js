@@ -22,7 +22,7 @@ const HomeComponent = () => {
        
         spaceBetween={50}
         slidesPerView={1}
-        navigation
+        // navigation
         pagination={{ clickable: true }}
         // scrollbar={{ draggable: true }}
         onSwiper={(swiper) => console.log(swiper)}

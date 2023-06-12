@@ -4,8 +4,10 @@
     font-weight: 700;
     color: white;
 }
-.serviceBg{
+.serviceBg {
     background-color: #002060;
+    background-image: url(../../assets/USP/amigos-2024202_1920.png);
+    background-position: left;
     padding: 50px;
     color: white;
 }
@@ -14,8 +16,6 @@
     background-color: #006AAC;
     /* height: auto; */
     width: 300px;
-    display: block;
-    margin: auto;
     padding: 10px;
     height: 80px;
     border-radius: 10px;
@@ -32,14 +32,18 @@
     color: #fff;
 }
 .servicePara{
+    height: 120px;
+    width: 350px;
     background-color: white;
     color: #006AAC;
     width: 400px;
-    display: block;
-    margin: auto;
-    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    /* font-size: 22px; */
     padding: 10px;
     border-radius: 10px;
+    text-align: right;
     transition: 0.3s ease-in-out;
 }
 .servicePara:hover{
@@ -48,5 +52,6 @@
 }
 
 .servicePara p{
+    /* margin-top: 5px; */
     color: #006AAC;
 }
