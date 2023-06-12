@@ -5,9 +5,9 @@
     color: white;
 }
 .serviceBg {
-    background-color: #002060;
-    background-image: url(../../assets/USP/amigos-2024202_1920.png);
-    background-position: left;
+    /* background-color: #002060; */
+    background-image: url(../../assets/USP//bg-01.png);
+    /* background-position: left; */
     padding: 50px;
     color: white;
 }

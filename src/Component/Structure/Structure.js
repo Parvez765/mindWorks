@@ -4,7 +4,7 @@ import "./Structure.css"
 const Structure = () => {
     return (
         <div className='mb-[10px] serviceBg'>
-            {/* <img src="https://i.ibb.co/NTcq3Yc/pyramid-01.png" alt="Mind Works Service Pyramid" className='hidden lg:block lg:w-[250px]'/> */}
+           
             <div className='container mx-auto'>
                 <h1 className='ourServiceText text-left mb-[16px]' data-aos="fade-right">What is Mind Works?</h1>
                 <div className='flex gap-[150px]'>
