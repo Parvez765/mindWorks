@@ -15,7 +15,6 @@ const HomePage = () => {
             <SEED/>
         </div>
     );
-    
 };
 
 export default HomePage;
