@@ -5,10 +5,7 @@
   "dependencies": {
     "aos": "^3.0.0-beta.6",
     "react": "^18.2.0",
-    "react-circle": "^1.1.1",
-    "react-circular-progressbar": "^2.1.0",
     "react-dom": "^18.2.0",
-    "react-hamburger-menus": "^1.0.16",
     "react-icons": "^4.9.0",
     "react-router": "^6.12.1",
     "react-router-dom": "^6.12.1",
