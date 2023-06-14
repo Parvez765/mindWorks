@@ -1,5 +1,5 @@
 .ourServiceText{
-    font-size: 50px;
+   
     margin-top: 15px;
     font-weight: 700;
     color: white;
@@ -33,17 +33,17 @@
 }
 .servicePara{
     height: 120px;
-    width: 350px;
+   
     background-color: white;
     color: #006AAC;
-    width: 400px;
+    /* width: 400px; */
     display: flex;
     align-items: center;
-    justify-content: end;
+    /* justify-content: end; */
     /* font-size: 22px; */
     padding: 10px;
     border-radius: 10px;
-    text-align: right;
+    /* text-align: right; */
     transition: 0.3s ease-in-out;
 }
 .servicePara:hover{

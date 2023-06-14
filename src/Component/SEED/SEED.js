@@ -1,48 +1,51 @@
 import React, { useEffect, useState, useRef } from 'react';
-import './SEED.css';
-import { CircularProgressBar } from '@tomickigrzegorz/react-circular-progress-bar';
+import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import "./SEED.css"
 
 const SEED = () => {
-  const configs = [
+  const [progressValues, setProgressValues] = useState({
+    'Production Increase': 0,
+    'Cost Reduction': 0,
+    'Defect Rate Reduction': 0,
+    'Over Time Hour Reduction': 0,
+  });
+
+  const progressConfig = [
     {
-      id: 0,
+      label: 'Production Increase',
       percent: 36,
       colorSlice: '#E91E63',
       fontColor: '#F50057',
-      fontSize: '1.2rem',
-      fontWeight: 700,
-      label: 'Production Increase',
+      fontSize: '30px',
+      fontWeight: 800,
     },
     {
-      id: 1,
+      label: 'Cost Reduction',
       percent: 30,
       colorSlice: '#2196F3',
       fontColor: '#1976D2',
-      fontSize: '1.2rem',
-      fontWeight: 700,
-      label: 'Cost Reduction',
+      fontSize: '30px',
+      fontWeight: 800,
     },
     {
-      id: 2,
+      label: 'Defect Rate Reduction',
       percent: 38,
       colorSlice: '#4CAF50',
       fontColor: '#388E3C',
-      fontSize: '1.2rem',
-      fontWeight: 700,
-      label: 'Defect Rate Reduction',
+      fontSize: '30px',
+      fontWeight: 800,
     },
     {
-      id: 3,
+      label: 'Over Time Hour Reduction',
       percent: 44,
       colorSlice: '#FF9800',
       fontColor: '#F57C00',
-      fontSize: '1.2rem',
-      fontWeight: 700,
-      label: 'Overtime Hour Reduction',
+      fontSize: '30px',
+      fontWeight: 800,
     },
   ];
 
-  const [update, setUpdate] = useState(configs);
   const progressSectionRef = useRef(null);
   const animationRef = useRef(null);
 
@@ -67,14 +70,36 @@ const SEED = () => {
     };
 
     const animateProgress = () => {
-      setUpdate((prevUpdate) => {
-        return prevUpdate.map((config) => ({
-          ...config,
-          percent:  config.percent,
-        }));
+      setProgressValues((prevValues) => {
+        return {
+          'Production Increase': 0,
+          'Cost Reduction': 0,
+          'Defect Rate Reduction': 0,
+          'Over Time Hour Reduction': 0,
+        };
       });
 
-      animationRef.current = requestAnimationFrame(animateProgress);
+      const startTimestamp = performance.now();
+
+      const animationStep = (timestamp) => {
+        const progress = timestamp - startTimestamp;
+        const duration = 1000; // Animation duration in milliseconds
+
+        setProgressValues((prevValues) => {
+          return {
+            'Production Increase': Math.min((progress / duration) * progressConfig[0].percent, progressConfig[0].percent),
+            'Cost Reduction': Math.min((progress / duration) * progressConfig[1].percent, progressConfig[1].percent),
+            'Defect Rate Reduction': Math.min((progress / duration) * progressConfig[2].percent, progressConfig[2].percent),
+            'Over Time Hour Reduction': Math.min((progress / duration) * progressConfig[3].percent, progressConfig[3].percent),
+          };
+        });
+
+        if (progress < duration) {
+          animationRef.current = requestAnimationFrame(animationStep);
+        }
+      };
+
+      animationRef.current = requestAnimationFrame(animationStep);
     };
 
     window.addEventListener('scroll', handleScroll);
@@ -89,22 +114,32 @@ const SEED = () => {
   }, []);
 
   return (
-    <div className="container mx-auto">
-      <div className="p-10">
-        <h1 className="text-center seedText">SEED</h1>
-        <p className="lg:w-[850px] block mx-auto text-center text-[22px] font-medium">
-          SEED is Sustainable Efficiency and Employee Development. It is our specialized solution offering to help businesses enhance the 4 Ps – Processes, People, Product, and Purpose. We offer customized strategies to organizations to help them achieve enhanced productivity and reduced costs. We have successfully transformed businesses across industries to achieve operational excellence with SEED.
-        </p>
-        <div ref={progressSectionRef} className="flex justify-between mt-[50px]">
-          {update.map((config) => (
-            <div key={config.id} className="relative">
-              <div className="circle">
-                <CircularProgressBar {...config} />
+    <div className='bg-[#002060]'>
+      <div className="container mx-auto" data-aos="fade-up">
+        <div className="p-10">
+          <h1 className="text-center seedText text-white">SEED</h1>
+          <p className="lg:w-[850px] block mx-auto text-center text-[22px] font-medium text-white">
+            SEED is Sustainable Efficiency and Employee Development. It is our specialized solution offering to help businesses enhance the 4 Ps – Processes, People, Product, and Purpose. We offer customized strategies to organizations to help them achieve enhanced productivity and reduced costs. We have successfully transformed businesses across industries to achieve operational excellence with SEED.
+          </p>
+          <div ref={progressSectionRef} className="flex flex-col items-center lg:flex-row justify-between mt-[50px] mb-[50px]">
+            {progressConfig.map((config, index) => (
+              <div key={index} className="relative">
+                <div style={{ width: '250px', height: '250px' }}>
+                  <CircularProgressbar
+                    value={progressValues[config.label]}
+                    text={`${Math.round(progressValues[config.label])}%`}
+                    styles={buildStyles({
+                      pathColor: config.colorSlice,
+                      textColor: config.fontColor,
+                      textSize: config.fontSize,
+                      fontWeight: config.fontWeight,
+                    })}
+                  />
+                </div>
+                <p className="text-center clircleHeading mt-[10px] mb-[10px] lg:mb-[0] text-white">{config.label}</p>
               </div>
-             
-              <p className="text-center clircleHeading">{config.label}</p>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>
