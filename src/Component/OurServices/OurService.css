@@ -1,0 +1,44 @@
+.serviceHead{
+    font-size: 50px;
+    font-weight: 700;
+    color: #002060;
+}
+.imageOne {
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .imageOne::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    border-radius: inherit;
+    border: 5px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px;
+    filter: blur(5px);
+  }
+.imageHeadingOne{
+    font-size: 35px;
+    font-weight: 700;
+    color: #006AAC;
+}
+.imageHeadingPara{
+    font-size: 22px;
+    font-weight: 400;
+    color: #002060;
+    margin-top: 12px;
+}
+.learnBtn{
+    font-weight: 700;
+    color: #006AAC;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.learnBtn:hover{
+    color: #002060;
+}

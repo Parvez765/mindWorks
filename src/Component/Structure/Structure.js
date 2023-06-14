@@ -3,7 +3,7 @@ import "./Structure.css"
 
 const Structure = () => {
     return (
-        <div className='mb-[10px] serviceBg'>
+        <div className='serviceBg'>
            
             <div className='container mx-auto'>
                 <h1 className='ourServiceText text-left mb-[16px]' data-aos="fade-right">What is Mind Works?</h1>

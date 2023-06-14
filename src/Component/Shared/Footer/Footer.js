@@ -4,7 +4,7 @@ import "./Footer.css"
 
 const Footer = () => {
     return (
-        <div className='container mx-auto p-6'>
+        <div className='container mx-auto p-6'  data-aos="zoom-in-up">
             <div className='grid justify-around lg:grid-cols-2'>
                 <div className='flex flex-col'>
                     <img src="https://i.ibb.co/tC7tyS6/nav-Logo-01.png" className='w-[250px]' alt="Mind Works Footer Logo" />
