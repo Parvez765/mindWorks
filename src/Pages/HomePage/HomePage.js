@@ -4,6 +4,7 @@ import USP from '../../Component/USP/USP';
 import Structure from '../../Component/Structure/Structure';
 import OurServices from '../../Component/OurServices/OurServices';
 import SEED from '../../Component/SEED/SEED';
+import Industries from '../../Component/Industries/Industries';
 
 const HomePage = () => {
     return (
@@ -12,7 +13,8 @@ const HomePage = () => {
             <USP />
             <Structure />
             <OurServices />
-            <SEED/>
+            <SEED />
+            <Industries/>
         </div>
     );
 };
