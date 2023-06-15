@@ -15,8 +15,8 @@ const Industries = () => {
                     <div className='mt-[20px] grid grid-cols-1 md:grid-cols-2'>
                         {
                             industries?.map(ind => <div className='flex items-center gap-[10px]' data-aos="flip-up">
-                                <FaCheck className='text-[#006AAC] text-[22px]'/>
-                                <h1 className='text-[22px] font-bold text-[#002060]'>{ind.name}</h1>
+                               <img src="https://i.ibb.co/7kbQ8bj/correct.png" className='w-[25px]' alt="Mind Works Right Mark"/>
+                                <h1 className='text-[22px] font-medium text-[#002060]'>{ind.name}</h1>
                             </div>)
                        }
                    </div>
