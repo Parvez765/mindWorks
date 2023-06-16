@@ -16,7 +16,7 @@ const Industries = () => {
                         {
                             industries?.map(ind => <div className='flex items-center gap-[10px] mt-[15px] lg:mt-[0px]' data-aos="flip-up">
                                <img src="https://i.ibb.co/7kbQ8bj/correct.png" className='w-[25px]' alt="Mind Works Right Mark"/>
-                                <h1 className='text-[16px] 2xl:text-[22px] font-medium text-[#002060]'>{ind.name}</h1>
+                                <h1 className='text-[12px] 2xl:text-[22px] font-medium text-[#002060]'>{ind.name}</h1>
                             </div>)
                        }
                    </div>
