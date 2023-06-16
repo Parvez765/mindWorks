@@ -4,7 +4,7 @@ import clientLogos from "../../data/clientLogo"
 
 const ClientsLogo = () => {
     return (
-        <div className='container mx-auto p-10'>
+        <div className='p-10'>
             <h1 className='text-[50px] text-center font-bold text-[#002060]'>Clients And Associates</h1>
             {/* First Section */}
             <div class="slider">
