@@ -8,8 +8,7 @@ const Industries = () => {
         <div className='container mx-auto p-10'>
             <div className='grid grid-cols-1 lg:grid-cols-2 lg:gap-[140px]'>
                 <div data-aos="fade-right">
-                <img src="https://i.ibb.co/9gVh7bN/african-business-male-people-shaking-hands-min.webp" className='handShake' alt="Mind Works Industries Corporate HandShake" />
-
+                    <img src="https://i.ibb.co/9gVh7bN/african-business-male-people-shaking-hands-min.webp" className='handShake' alt="Mind Works Industries Corporate HandShake"/>
                 </div>
                 <div>
                     <h1 className='text-[50px] font-bold text-[#002060] leading-[50px] mt-[50px] lg:mt-[0]' data-aos="fade-left">Industries We Serve</h1>
