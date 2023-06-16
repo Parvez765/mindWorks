@@ -11,7 +11,7 @@ const Industries = () => {
                     <img src="https://i.ibb.co/9gVh7bN/african-business-male-people-shaking-hands-min.webp" className='handShake' alt="Mind Works Industries Corporate HandShake"/>
                 </div>
                 <div>
-                    <h1 className='text-[50px] font-bold text-[#002060] leading-[50px] mt-[50px] lg:mt-[0]' data-aos="fade-left">Industries We Serve</h1>
+                    <h1 className='text-[35px] lg:text-[50px] font-bold text-[#002060] leading-[50px] mt-[50px] lg:mt-[0]' data-aos="fade-left">Industries We Serve</h1>
                     <div className='mt-[20px] grid grid-cols-2'>
                         {
                             industries?.map(ind => <div className='flex items-center gap-[10px] mt-[15px]' data-aos="flip-up">
