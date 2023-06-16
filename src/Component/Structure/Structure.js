@@ -7,9 +7,9 @@ const Structure = () => {
            
             <div className='container mx-auto'>
                 <h1 className='ourServiceText text-center lg:text-left mb-[16px] text-[46px] lg:text-[50px]' data-aos="fade-right">What is Mind Works?</h1>
-                <div className='flex flex-col xl:flex-row gap-[150px]'>
+                <div className='flex flex-col 2xl:flex-row gap-[150px]'>
                     <div>
-                        <p className='text-center lg:text-left xl:w-[600px]' data-aos="zoom-in-up">Mindworks is an organization that strives to achieve excellence through
+                        <p className='text-center lg:text-left 2xl:w-[600px]' data-aos="zoom-in-up">Mindworks is an organization that strives to achieve excellence through
                             people transformation. We help companies achieve operational excellence
                             through continuous improvement. The Minworks Way is to work with your
                             organization to help you achieve lean operations and build a culture of
