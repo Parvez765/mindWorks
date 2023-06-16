@@ -6,6 +6,7 @@ import OurServices from '../../Component/OurServices/OurServices';
 import SEED from '../../Component/SEED/SEED';
 import Industries from '../../Component/Industries/Industries';
 import Testimonials from '../../Component/Testimonials/Testimonials';
+import ClientsLogo from '../../Component/ClientsLogo/ClientsLogo';
 
 const HomePage = () => {
     return (
@@ -16,7 +17,8 @@ const HomePage = () => {
             <OurServices />
             <Industries/>
             <SEED />
-            <Testimonials/>
+            <Testimonials />
+            <ClientsLogo/>
         </div>
     );
 };
