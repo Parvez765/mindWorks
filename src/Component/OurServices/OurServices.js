@@ -6,7 +6,7 @@ const OurServices = () => {
     return (
         <div className='serviceContainer'>
             <div className='container mx-auto p-10'>
-                <h1 className='text-center serviceHead mb-[100px] leading-[50px]'>Our Services</h1>
+                <h1 className='text-center serviceHead mb-[100px]  text-[35px] lg:text-[50px] leading-[50px]'>Our Services</h1>
                 <div className='mt-[50px]'>
                     <div className='grid grid-cols-1 lg:grid-cols-2 justify-between gap-[20px] lg:gap-[50px] mb-[50px]'>
                         <img src="https://i.ibb.co/5Lnwsjc/counselling-One.webp" alt="Our Service List One" className='lg:w-[700px] imageOne' data-aos="fade-right"/>

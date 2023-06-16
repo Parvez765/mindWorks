@@ -20,9 +20,9 @@
     background-color: #d6d6d6;
     /* box-shadow: 2px 2px 2px 2px #002060; */
     border: 2px solid #002060;
-    padding: 50px;
+    /* padding: 25px; */
     border-radius: 10px;
-    height: 450px;
+    /* height: 500px; */
     /* width: 1500px; */
 }
 .clientImage{
@@ -48,4 +48,5 @@
         flex-direction: column;
         /* transition-property: transform; */
     }
+    
 }
