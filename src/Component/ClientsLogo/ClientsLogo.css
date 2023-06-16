@@ -22,11 +22,36 @@ body {
 	.slide-track {
 		animation: scroll var(--animationSpeed) linear infinite;
 		display: flex;
-		width: calc(250px * 14);
+		align-items: center;
+		gap:25px
+		/* width: calc(250px * 14); */
 	}
 	
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
+	
 }
+
+.slider.second-section {
+    /* height: 100px; */
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+
+    .slide-track {
+        animation: scroll-right var(--animationSpeed) linear infinite;
+        display: flex;
+        align-items: center;
+        gap: 25px;
+        /* width: calc(250px * 14); */
+    }
+}
+
+@keyframes scroll-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(250px * 7));
+    }
+}
+
