@@ -6,7 +6,7 @@ const Structure = () => {
         <div className='serviceBg'>
            
             <div className='container mx-auto'>
-                <h1 className='ourServiceText text-center lg:text-left mb-[16px] text-[46px] lg:text-[50px]' data-aos="fade-right">What is Mind Works?</h1>
+                <h1 className='ourServiceText text-center lg:text-left lg:mb-[16px] text-[46px] lg:text-[50px] leading-[50px] mb-[50px]' data-aos="fade-right">What is Mind Works?</h1>
                 <div className='flex flex-col 2xl:flex-row gap-[150px]'>
                     <div>
                         <p className='text-center lg:text-left 2xl:w-[600px]' data-aos="zoom-in-up">Mindworks is an organization that strives to achieve excellence through
