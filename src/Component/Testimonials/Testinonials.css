@@ -17,16 +17,26 @@
     z-index: 10;
 }
 .testimonialContainer{
-    background-color: rgb(249, 248, 248);
+    background-color: #d6d6d6;
+    /* box-shadow: 2px 2px 2px 2px #002060; */
+    border: 2px solid #002060;
     padding: 50px;
     border-radius: 10px;
-    height: 600px;
+    height: 450px;
     /* width: 1500px; */
 }
 .clientImage{
     border-radius: 50%;
     width: 100px !important;
 }
+
+.clamped-text {
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
 
 @media screen and(max-width: 768px) {
     .swiper-wrapper{
