@@ -1,27 +1,21 @@
+.serviceContainer{
+    background: linear-gradient(rgb(237, 237, 237), rgb(223, 223, 255));
+}
+
+
 .serviceHead{
     font-size: 50px;
     font-weight: 700;
     color: #002060;
 }
 .imageOne {
-    position: relative;
+    /* position: relative; */
     border-radius: 10px;
     overflow: hidden;
-  }
-  
-  .imageOne::before {
-    content: '';
-    position: absolute;
-    top: -5px;
-    left: -5px;
-    right: -5px;
-    bottom: -5px;
-    z-index: -1;
-    border-radius: inherit;
-    border: 5px solid rgba(0, 0, 0, 0.2);
-    box-shadow: 2px 2px 2px;
-    filter: blur(5px);
-  }
+    box-shadow: 6px 6px 6px 6px #717171;
+}
+
+ 
 .imageHeadingOne{
     font-size: 35px;
     font-weight: 700;

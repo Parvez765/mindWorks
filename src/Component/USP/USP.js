@@ -35,7 +35,7 @@ const USP = () => {
                 </div>
                  {/* USP Five */}
                  <div>
-                    <img className='imgContainer w-[100px] block  mt-[25px] mx-auto' src="https://i.ibb.co/4Zvr34X/professional.png" alt="Mind Works USP" />
+                    <img className='imgContainer w-[100px] block  mt-[25px] 2xl:mt-[0px] mx-auto' src="https://i.ibb.co/4Zvr34X/professional.png" alt="Mind Works USP" />
                     <p className='text-center uspText leading-6'>Business Excellence</p>
                 </div>
             </div>
