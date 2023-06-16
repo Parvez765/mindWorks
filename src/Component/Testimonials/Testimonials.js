@@ -20,7 +20,7 @@ const Testimonials = () => {
 
     useEffect(() => {
         const handleResize = () => {
-            if (window.innerWidth >= 768) {
+            if (window.innerWidth >= 1500) {
                 setSlidesPerView(3);
             } else {
                 setSlidesPerView(1);
@@ -56,7 +56,7 @@ const Testimonials = () => {
                                 <FaStar className='text-yellow-500' />
                                 <FaStar className='text-yellow-500' />
                             </div>
-                            <p className='mt-[10px] mb-[20px] lg:h-[360px]'>Mind Works is an excellent center for self development and Truly a  demonstrative training & consulting platform for thriving and blooming people whose excellence kept hidden. My best wishes remains with Mind Works.</p>
+                            <p className='mt-[10px] mb-[20px] xl:h-[360px]'>Mind Works is an excellent center for self development and Truly a  demonstrative training & consulting platform for thriving and blooming people whose excellence kept hidden. My best wishes remains with Mind Works.</p>
                             <div className='flex items-center gap-[12px]'>
                                 <img src="https://i.ibb.co/R3bJ6pK/client-One.jpg" className='clientImage' alt="Mind Works Testimonials" />
                                 <div>
@@ -74,7 +74,7 @@ const Testimonials = () => {
                             <FaStar className='text-yellow-500' />
                             <FaStar className='text-yellow-500' />
                         </div>
-                        <p className='mt-[10px] mb-[20px] lg:h-[360px]'>Mind Woks conducted 2 training sessions on Japanese 5S for the employees of our corporate office and 03 power plants in Bangladesh. I am pleased that those employees got together and implemented 5S in our work places and improved the efficiency, work performance, cleanness, orderliness at all levels. Training insights were very effective and now we reap the benefits of our investment.</p>
+                        <p className='mt-[10px] mb-[20px] xl:h-[360px]'>Mind Woks conducted 2 training sessions on Japanese 5S for the employees of our corporate office and 03 power plants in Bangladesh. I am pleased that those employees got together and implemented 5S in our work places and improved the efficiency, work performance, cleanness, orderliness at all levels. Training insights were very effective and now we reap the benefits of our investment.</p>
                         <div className='flex items-start gap-[12px]'>
                             <img src="https://i.ibb.co/tzDkhYW/client-Two.jpg" className='clientImage' alt="Mind Works Testimonials" />
                             <div>
@@ -92,7 +92,7 @@ const Testimonials = () => {
                                 <FaStar className='text-yellow-500' />
                                 <FaStar className='text-yellow-500' />
                             </div>
-                            <p className='mt-[10px] mb-[20px] lg:h-[360px]'>When things come towards breaking the ice, Mind Works delivers perfectly!! We’ve worked with them in shaping up change-making minds within the leaders of A&E, our organization. If someone is thinking to implement Continuous Improvement culture in any organization, Mind Works will definitely be a wise choice.</p>
+                            <p className='mt-[10px] mb-[20px] xl:h-[360px]'>When things come towards breaking the ice, Mind Works delivers perfectly!! We’ve worked with them in shaping up change-making minds within the leaders of A&E, our organization. If someone is thinking to implement Continuous Improvement culture in any organization, Mind Works will definitely be a wise choice.</p>
                             <div className='flex items-start gap-[12px]'>
                                 <img src="https://i.ibb.co/44cHZQc/client-Three.jpg" className='clientImage' alt="Mind Works Testimonials" />
                                 <div>
