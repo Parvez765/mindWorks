@@ -11,12 +11,12 @@ const Industries = () => {
                     <img src="https://i.ibb.co/9gVh7bN/african-business-male-people-shaking-hands-min.webp" className='handShake' alt="Mind Works Industries Corporate HandShake"/>
                 </div>
                 <div>
-                    <h1 className='text-[50px] font-bold text-[#002060]' data-aos="fade-left">Industries We Serve</h1>
-                    <div className='mt-[20px] grid grid-cols-1 md:grid-cols-2'>
+                    <h1 className='text-[50px] font-bold text-[#002060] leading-[50px] mt-[50px] lg:mt-[0]' data-aos="fade-left">Industries We Serve</h1>
+                    <div className='mt-[20px] grid grid-cols-2'>
                         {
-                            industries?.map(ind => <div className='flex items-center gap-[10px]' data-aos="flip-up">
+                            industries?.map(ind => <div className='flex items-center gap-[10px] mt-[15px] lg:mt-[0px]' data-aos="flip-up">
                                <img src="https://i.ibb.co/7kbQ8bj/correct.png" className='w-[25px]' alt="Mind Works Right Mark"/>
-                                <h1 className='text-[22px] font-medium text-[#002060]'>{ind.name}</h1>
+                                <h1 className='text-[16px] 2xl:text-[22px] font-medium text-[#002060]'>{ind.name}</h1>
                             </div>)
                        }
                    </div>
