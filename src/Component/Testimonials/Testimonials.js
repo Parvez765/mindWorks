@@ -36,7 +36,7 @@ const Testimonials = () => {
     return (
         <div>
              <div className='container mx-auto p-10'>
-            <h1 className='text-[35px] lg:text-[50px] text-center font-bold text-[#002060] leading-[60px]'>What Client Says <br /> About Us</h1>
+            <h1 className='text-[35px] lg:text-[50px] text-center font-bold text-[#002060] leading-9 lg:leading-[60px]'>What Client Says <br /> About Us</h1>
             <div className='mt-[50px]'>
                 <Swiper
                     // install Swiper modules
