@@ -81,7 +81,7 @@ const Testimonials = () => {
                             <img src="https://i.ibb.co/tzDkhYW/client-Two.jpg" className='clientImage' alt="Mind Works Testimonials" />
                             <div>
                                 <h4 className='font-bold text-[#002060] text-[16px]'>Gamini Sarath</h4>
-                                <p>Country Director,Lakdhanavi Ltd, Bangladesh Branch</p>
+                                <p>Country Director, Lakdhanavi Ltd, Bangladesh Branch</p>
                             </div>
                         </div>
                     </div></SwiperSlide>

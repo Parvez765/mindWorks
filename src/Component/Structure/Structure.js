@@ -30,7 +30,7 @@ const Structure = () => {
                                     Identify Improvement Opportunities <br />
                                     Strategy/Policy Deployment</p>
                             </div>
-                            <h1 className='textOne text-[40px] textContainer text-[#002060] text-center mb-[10px] '>Strategic</h1>
+                            <h1 className='textOne text-[35px] lg:text-[40px] textContainer text-[#002060] text-center mb-[10px] '>Strategic</h1>
                         </div>
                         <div className='flex flex-col-reverse items-center lg:items-start lg:flex-row  gap-[5px] lg:gap-[10px]'>
                             <div className='servicePara  w-[250px] lg:w-[350px] mb-[20px]'>
@@ -38,7 +38,7 @@ const Structure = () => {
                                     Culture of Continuous Improvement <br />
                                     TOP : Takt - Flow - Pull</p>
                             </div>
-                            <h1 className='textOne text-[40px] textContainer text-[#002060] text-center mb-[10px] mt-[15px]'>Tactical</h1>
+                            <h1 className='textOne text-[35px] lg:text-[40px] textContainer text-[#002060] text-center mb-[10px] mt-[15px]'>Tactical</h1>
                         </div>
                         <div className='flex flex-col-reverse items-center lg:items-start lg:flex-row  gap-[5px] lg:gap-[10px]'>
                             <div className='servicePara w-[250px] lg:w-[350px] mb-[20px]'>
@@ -47,7 +47,7 @@ const Structure = () => {
                                     Sustainment <br />
                                     SQDE</p>
                             </div>
-                            <h1 className='textOne text-[40px] textContainer text-[#002060] text-center mb-[10px] mt-[15px]'>Operational</h1>
+                            <h1 className='textOne text-[35px] lg:text-[40px] textContainer text-[#002060] text-center mb-[10px] mt-[15px]'>Operational</h1>
                         </div>
                     </div>
 

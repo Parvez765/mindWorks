@@ -136,7 +136,7 @@ const SEED = () => {
                     })}
                   />
                 </div>
-                <p className="text-center clircleHeading mt-[10px] mb-[10px] lg:mb-[0] text-white">{config.label}</p>
+                <p className="text-center clircleHeading mt-[10px] mb-[80px] lg:mb-[0] text-white">{config.label}</p>
               </div>
             ))}
           </div>
