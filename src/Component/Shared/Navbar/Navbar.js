@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { FaAngleDown, FaBars, FaFacebook, FaInstagram, FaLinkedin, FaRegMoon, FaShareSquare, FaTwitter } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const NavBar = () => {
 
@@ -39,7 +40,7 @@ const NavBar = () => {
     <nav className="navbar">
       <div className="container mx-auto navContainer">
         <div className=''>
-          <img src="https://i.ibb.co/yWx2LpH/navLogo.png" alt="Mind WorksBd Navbar Logo" className='w-[150px] lg:w-[300px]' />
+         <Link to="/"> <img src="https://i.ibb.co/yWx2LpH/navLogo.png" alt="Mind WorksBd Navbar Logo" className='w-[150px] lg:w-[300px]' /></Link>
         </div>
 
         <div className='hidden lg:block'>
@@ -95,11 +96,11 @@ const NavBar = () => {
                   About Us
                 </a>
               </li>
-              <li className="nav-item">
+              <Link to="/contact"><li className="nav-item">
                 <a href="#contact" className="nav-link" onClick={handleLinkClick}>
                   Contact
                 </a>
-              </li>
+              </li></Link>
             </ul>
             <div className='ml-[16px]'>
               <button className='appoinmentBtn'>Schedule a call</button>
@@ -149,7 +150,7 @@ const NavBar = () => {
                   <li><a>Seed</a></li>
                     <li><a>Lean Transformation</a></li>
                     <li><a>About Us</a></li>
-                    <li><a>Contact</a></li>
+                    <Link to="/contact"><li><a>Contact</a></li></Link>
                     <div className='mt-[20px]'><button className='appoinmentMobileBtn'>Schedule a call</button></div>
                     <div className='flex items-center gap-[16px] mt-[20px] ml-[5px]'>
                     <FaFacebook className='text-black text-[22px]' />

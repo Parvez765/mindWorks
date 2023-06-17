@@ -30,13 +30,13 @@
     width: 100px !important;
 }
 
-.clamped-text {
+/* .clamped-text {
     display: -webkit-box;
-    -webkit-line-clamp: 6;
+    -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
-  
+   */
 
 @media screen and(max-width: 768px) {
     .swiper-wrapper{
