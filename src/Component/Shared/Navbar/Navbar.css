@@ -119,4 +119,13 @@
   border: 2px solid white;
   color: white;
 }
-
+.appoinmentMobileBtn{
+  border: 2px solid #006AAC;
+  background-color: #006AAC;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  transition: 0.4s ease-in-out;
+  width: 200px;
+}

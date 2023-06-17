@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
-import { FaAngleDown, FaBars, FaRegMoon, FaShareSquare } from "react-icons/fa";
+import { FaAngleDown, FaBars, FaFacebook, FaInstagram, FaLinkedin, FaRegMoon, FaShareSquare, FaTwitter } from "react-icons/fa";
 
 const NavBar = () => {
 
@@ -27,6 +27,10 @@ const NavBar = () => {
 
   const handleShareClick = () => {
     setCross(true);
+  };
+
+  const handleDrawerToggle = () => {
+    setCross(!cross);
   };
 
 
@@ -102,13 +106,15 @@ const NavBar = () => {
             </div>
           </div>
         </div>
-        <div className='block lg:hidden' onClick={() => setCross(!cross)}>
+        {/* Mobile View */}
+        <div className='block lg:hidden' onClick={handleDrawerToggle}>
           {
             cross ? <FaBars className="text-[white] text-[22px]" /> : null
           }
         </div>
       </div>
-      <div>
+      {/* Drawer Section */}
+      <div className='block lg:hidden'>
         {cross ? (
           <div></div>
         ) : (
@@ -129,12 +135,29 @@ const NavBar = () => {
                     <FaShareSquare className='text-[black] text-[22px]' onClick={handleShareClick} />
                   </div>
                   <li>
-                    <a>Sidebar Item 1</a>
+                    <details>
+                      <summary>
+                        Services <FaAngleDown/>
+                      </summary>
+                      <ul className="p-2">
+                        <li><a>Consulting</a></li>
+                        <li><a>Msi</a></li>
+                        <li><a>Traning</a></li>
+                      </ul>
+                    </details>
                   </li>
-                  <li>
-                    <a>Sidebar Item 2</a>
-                  </li>
-                </ul>
+                  <li><a>Seed</a></li>
+                    <li><a>Lean Transformation</a></li>
+                    <li><a>About Us</a></li>
+                    <li><a>Contact</a></li>
+                    <div className='mt-[20px]'><button className='appoinmentMobileBtn'>Schedule a call</button></div>
+                    <div className='flex items-center gap-[16px] mt-[20px] ml-[5px]'>
+                    <FaFacebook className='text-black text-[22px]' />
+                    <FaTwitter className='text-black  text-[22px]'/>
+                    <FaLinkedin className='text-black  text-[22px]'/>
+                    <FaInstagram className='text-black  text-[22px]'/>
+                </div>
+                  </ul>
               </div>
             }
           </div>

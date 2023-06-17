@@ -3,7 +3,7 @@ import { FaPhoneAlt, FaEnvelopeOpen, FaFacebook, FaTwitter, FaLinkedin, FaInstag
 
 const TopNav = () => {
     return (
-        <div className='bg-[#474747] pt-3 pb-3'>
+        <div className='bg-[#474747] pt-3 pb-3 hidden lg:block'>
             <div className='container mx-auto flex justify-between gap-[20px]'>
                 <div className='hidden lg:block'>
                     <div className='flex items-center gap-[20px]'>
