@@ -29,7 +29,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     {/* Form */}
-                    <div className="w-[400px] lg:w-[600px] mt-[50px] lg:mt-[0px]">
+                    <div className="lg:w-[600px] mt-[50px] lg:mt-[0px]">
                         <div className="">
 
                             <div className="card shadow-2xl bg-base-100 ">
