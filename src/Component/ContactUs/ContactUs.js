@@ -8,7 +8,7 @@ const ContactUs = () => {
             <div className='container mx-auto mb-[80px]'>
                 <h1 className='text-white flex justify-center items-center text-[35px] lg:text-[50px] text-center font-bold'>Have Some Questions?</h1>
                 <p className='text-white lg:w-[850px] block mx-auto text-center'>For more information and enquirers, please get in touch with us on info@mindworksbd.com. You can also fill out the Contact Form below and we shall get in touch with you.</p>
-                <div className='flex flex-col-reverse lg:flex-row  justify-center gap-[150px]  mt-[100px]'>
+                <div className='flex flex-col-reverse lg:flex-row  justify-center gap-[150px]'>
                     <div className='flex flex-col items-center text-left'>
                         <div>
                             <img src="https://i.ibb.co/7GDpvc7/5124557-01.png" alt="Mind Works Contact Us" className='lg:w-[450px] block mx-auto' />
@@ -29,7 +29,7 @@ const ContactUs = () => {
                         </div>
                     </div>
                     {/* Form */}
-                    <div className="lg:w-[600px] mt-[50px] lg:mt-[0px]">
+                    <div className="w-[400px] lg:w-[600px] mt-[50px] lg:mt-[0px]">
                         <div className="">
 
                             <div className="card shadow-2xl bg-base-100 ">
