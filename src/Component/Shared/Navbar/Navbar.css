@@ -50,9 +50,9 @@
   transition: 0.4s ease-in-out;
 }
 .nav-links{
-  color: #fff;
+  color: black;
   text-decoration: none;
-  padding: 5px;
+  /* padding: 5px; */
   font-size: 16px;
   transition: 0.4s ease-in-out;
 }

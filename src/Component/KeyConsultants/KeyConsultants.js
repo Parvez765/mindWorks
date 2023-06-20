@@ -35,7 +35,7 @@ const KeyConsultants = () => {
                     </p>
                 </div>
                 <div className='flex flex-col justify-center items-center' data-aos="fade-right">
-                    <img src="https://i.ibb.co/KGmYC7N/Naijur-Rahman-2-300x300.jpg" className='clientImage' alt="Studio MetroDesk Owner Introduction" />
+                    <img src="https://i.ibb.co/KGmYC7N/Naijur-Rahman-2-300x300.jpg" className='clientsImage' alt="Studio MetroDesk Owner Introduction" />
                     <p className='lg:w-[1400px] lg:text-[22px] text-center mt-[70px] mb-[70px]'>
                         Naijur Rahman is a seasoned operational excellence consultant. He is one of the most well-known trainers in Bangladesh in the Continuous Improvement and Lean Six Sigma field. His expertise lies in improving the productivity and efficiency of business processes through the application of new-age solutions and people management. In over 16 years of work experience of holding senior positions, Naijur has not only gone extensive training in lean management but has learnt the industry best practices through experience. As the Country Chief of Mindworks, Naijur now delivers his knowledge and expertise to organizations in helping them achieve operational excellence and continuous improvement.
 

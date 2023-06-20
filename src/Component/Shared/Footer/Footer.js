@@ -45,6 +45,8 @@ const Footer = () => {
                             <div className='mt-[50px]'>
                             <h1 className='text-[#002060] text-[16px] 2xl:text-[22px] mindWorksHead mb-[20px]'>About Us</h1>
                             <Link to="/whoweare"><p className='mb-[10px]'>Who We Are</p></Link>
+                            <Link to="/testimonial"><p className='mb-[10px]'>Testimonial</p></Link>
+
                            <Link to="/contact"><p className='mb-[10px]'>Contact Us</p></Link>
                         </div>
                         </div>

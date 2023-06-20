@@ -51,7 +51,7 @@ const Testimonials = () => {
                     autoplay={{ delay: 2000, disableOnInteraction: false }}
                 >
                     <SwiperSlide>
-                        <div className='testimonialContainer lg:h-[380px]'>
+                        <div className='testimonialContainer'>
                             <div className='flex items-start gap-[8px] mb-[10px]'>
                                 <FaStar className='text-yellow-500' />
                                 <FaStar className='text-yellow-500' />
@@ -70,7 +70,7 @@ const Testimonials = () => {
                         </div>
                     </SwiperSlide>
                         <SwiperSlide>
-                            <div className='testimonialContainer lg:h-[380px]'>
+                            <div className='testimonialContainer'>
                         <div className='flex items-center gap-[8px] mb-[10px]'>
                             <FaStar className='text-yellow-500' />
                             <FaStar className='text-yellow-500' />
@@ -89,7 +89,7 @@ const Testimonials = () => {
                             </div>
                         </SwiperSlide>
                     <SwiperSlide>
-                        <div className='testimonialContainer lg:h-[380px]'>
+                        <div className='testimonialContainer'>
                             <div className='flex items-center gap-[8px] mb-[10px]'>
                                 <FaStar className='text-yellow-500' />
                                 <FaStar className='text-yellow-500' />
@@ -108,7 +108,7 @@ const Testimonials = () => {
                         </div>
                     </SwiperSlide>
                         <SwiperSlide>
-                            <div className='testimonialContainer lg:h-[380px]'>
+                            <div className='testimonialContainer'>
                         <div className='flex items-start gap-[8px] mb-[10px]'>
                             <FaStar className='text-yellow-500' />
                             <FaStar className='text-yellow-500' />
@@ -128,7 +128,7 @@ const Testimonials = () => {
                         </SwiperSlide>
                         <SwiperSlide>
                         
-                            <div className='testimonialContainer lg:h-[380px]'>
+                            <div className='testimonialContainer'>
                         <div className='flex items-start gap-[8px] mb-[10px]'>
                             <FaStar className='text-yellow-500' />
                             <FaStar className='text-yellow-500' />
@@ -137,7 +137,7 @@ const Testimonials = () => {
                             <FaStar className='text-yellow-500' />
                         </div>
                         <p className='mt-[10px] mb-[20px]  clamped-text'>Minds Works has conducted several Session for the Skill and Efficiency Development of Faculty members, staff and students of BGMEA University of Fashion & Technology on the areas of Personal Productivity, Time Management...<Link to="/testimonial"><span className='text-[#002060] font-medium'>See More</span></Link></p>
-                        <div className='flex items-start gap-[12px] mt-[60px]'>
+                        <div className='flex items-center gap-[12px] mt-[60px]'>
                             <img src="https://i.ibb.co/TM38p0g/client-Five.jpg" className='clientImage' alt="Mind Works Testimonials" />
                             <div>
                                 <h4 className='font-bold text-[#002060] text-[16px]'>Prof. Dr. Engr. Ayub Nabi Khan</h4>

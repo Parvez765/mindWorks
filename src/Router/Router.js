@@ -19,6 +19,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/whoweare", element: <About/>
+            },
+            {
+                path: "/lean", element: <About/>
             }
         ]
     }
