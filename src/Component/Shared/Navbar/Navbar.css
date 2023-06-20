@@ -53,7 +53,7 @@
   color: #fff;
   text-decoration: none;
   padding: 5px;
-  font-size: 22px;
+  font-size: 16px;
   transition: 0.4s ease-in-out;
 }
 .nav-links:hover{
@@ -84,7 +84,8 @@
   position: absolute;
   background-color: #006AAC;
   border-radius: 8px;
-  padding: 20px;
+  width: 150px;
+  padding: 10px;
 }
 
 .dropdown-menu.open {

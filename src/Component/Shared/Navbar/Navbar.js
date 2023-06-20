@@ -18,6 +18,11 @@ const NavBar = () => {
     setIsOpen(false);
   };
 
+  const handleLinksClick = () => {
+    setIsOpen(false);
+  };
+
+
   const handleMouseEnter = (dropdown) => {
     setActiveDropdown(dropdown);
   };
@@ -57,18 +62,18 @@ const NavBar = () => {
                 >
                   Services <FaAngleDown />
                 </button>
-                <ul className={`dropdown-menu ${activeDropdown === 'services' ? 'open' : ''}`}>
+                <ul className={`dropdown-menu ${activeDropdown === 'services' ? 'open' : ''}`} >
                   <li className="nav-item">
                     <a href="#service1" className="nav-links" onClick={handleLinkClick}>
                       Consulting
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item mt-[10px]">
                     <a href="#service2" className="nav-links" onClick={handleLinkClick}>
                       MSI
                     </a>
                   </li>
-                  <li className="nav-item">
+                  <li className="nav-item mt-[10px]">
                     <a href="#service3" className="nav-links" onClick={handleLinkClick}>
                       Training
                     </a>
@@ -91,16 +96,36 @@ const NavBar = () => {
                   Lean Transformation
                 </a>
               </li>
-              <li className="nav-item">
-                <a href="#contact" className="nav-link" onClick={handleLinkClick}>
-                  About Us
-                </a>
+              <li
+                className={`nav-item dropdown ${activeDropdown === 'about' ? 'active' : ''}`}
+                onMouseEnter={() => handleMouseEnter('about')}
+              >
+                <button
+                  className="dropdown-toggle serviceToggle flex items-center gap-[6px]"
+                  onClick={toggleNavbar}
+                  onBlur={() => setIsOpen(false)}
+                >
+                  About Us <FaAngleDown />
+                </button>
+                <ul className={`dropdown-menu ${activeDropdown === 'about' ? 'open' : ''}`}>
+                  <Link to="/whoweare"><li className="nav-item">
+                    <a href="#about2" className="nav-links" onClick={handleLinksClick}>
+                      Who We Are
+                    </a>
+                  </li></Link>
+                 <Link to="/contact"> <li className="nav-item mt-[10px]">
+                    <a href="#about1" className="nav-links" onClick={handleLinksClick}>
+                      Contact
+                    </a>
+                  </li></Link>
+                 
+                </ul>
               </li>
-              <Link to="/contact"><li className="nav-item">
+              {/* <Link to="/contact"><li className="nav-item">
                 <a href="#contact" className="nav-link" onClick={handleLinkClick}>
                   Contact
                 </a>
-              </li></Link>
+              </li></Link> */}
             </ul>
             <div className='ml-[16px]'>
               <button className='appoinmentBtn'>Schedule a call</button>
@@ -138,7 +163,7 @@ const NavBar = () => {
                   <li>
                     <details>
                       <summary>
-                        Services <FaAngleDown/>
+                        Services
                       </summary>
                       <ul className="p-2">
                         <li><a>Consulting</a></li>
@@ -149,8 +174,23 @@ const NavBar = () => {
                   </li>
                   <li><a>Seed</a></li>
                     <li><a>Lean Transformation</a></li>
-                    <li><a>About Us</a></li>
-                    <Link to="/contact"><li><a>Contact</a></li></Link>
+                    <li>
+                    <details>
+                      <summary>
+                        About Us
+                      </summary>
+                      <ul className="p-2">
+                      <Link to="/whoweare"><li className="nav-item">
+                    <a href="#about2" className="nav-links" onClick={handleLinksClick}>
+                      Who We Are
+                    </a>
+                  </li></Link>
+                        <Link to="/contact"><li><a>Contact</a></li></Link>
+                      
+                      </ul>
+                    </details>
+                  </li>
+                    
                     <div className='mt-[20px]'><button className='appoinmentMobileBtn'>Schedule a call</button></div>
                     <div className='flex items-center gap-[16px] mt-[20px] ml-[5px]'>
                     <FaFacebook className='text-black text-[22px]' />

@@ -21,10 +21,10 @@ const TopNav = () => {
                     </div>
                 </div>
                 <div className='flex items-center gap-[8px]'>
-                    <FaFacebook className='text-white' />
-                    <FaTwitter className='text-white'/>
-                    <FaLinkedin className='text-white'/>
-                    <FaInstagram className='text-white'/>
+                    <a href="https://www.facebook.com/mindworksbangladesh" target='_blank'><FaFacebook className='text-white' /></a>
+                    <a href="https://twitter.com/MindWorks16" target='_blank'><FaTwitter className='text-white'/></a>
+                   <a href='https://www.linkedin.com/company/mind-works-bangladesh/' target='_blank'><FaLinkedin className='text-white'/></a>
+                   
                 </div>
             </div>
         </div>

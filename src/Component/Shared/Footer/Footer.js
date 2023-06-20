@@ -2,6 +2,7 @@ import React from 'react';
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import "./Footer.css"
 import SubFooter from './SubFooter';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -9,12 +10,11 @@ const Footer = () => {
              <div className='container mx-auto p-10'  data-aos="zoom-in-up">
             <div className='grid justify-around lg:grid-cols-2'>
                 <div className='flex flex-col'>
-                    <img src="https://i.ibb.co/tC7tyS6/nav-Logo-01.png" className='w-[250px]' alt="Mind Works Footer Logo" />
+                    <Link to="/"><img src="https://i.ibb.co/tC7tyS6/nav-Logo-01.png" className='w-[250px]' alt="Mind Works Footer Logo" /></Link>
                     <div className='flex items-center gap-[15px] mt-[20px]'>
-                        <FaFacebookF className='text-[40px]'/>
-                        <FaTwitter className='text-[40px]'/>
-                        <FaLinkedinIn className='text-[40px]'/>
-                        <FaInstagram className='text-[40px]'/>
+                      <a href="https://www.facebook.com/mindworksbangladesh" target='_blank'><FaFacebookF className='text-[30px]' /></a>
+                    <a href="https://twitter.com/MindWorks16" target='_blank'><FaTwitter className='text-[30px]'/></a>
+                   <a href='https://www.linkedin.com/company/mind-works-bangladesh/' target='_blank'><FaLinkedinIn className='text-[30px]'/></a>
                     </div>
                 </div>
                 <div className='flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[100px]'>
@@ -43,9 +43,9 @@ const Footer = () => {
                             <p className='mb-[10px]'>SEED</p>
                             <p className='mb-[10px]'>Lean Transformation</p>
                             <div className='mt-[50px]'>
-                            <h1 className='text-[#002060] text-[16px] 2xl:text-[22px] mindWorksHead mb-[20px]'>Contact</h1>
-                            <p className='mb-[10px]'>About Us</p>
-                            <p className='mb-[10px]'>Contact Us</p>
+                            <h1 className='text-[#002060] text-[16px] 2xl:text-[22px] mindWorksHead mb-[20px]'>About Us</h1>
+                            <Link to="/whoweare"><p className='mb-[10px]'>Who We Are</p></Link>
+                           <Link to="/contact"><p className='mb-[10px]'>Contact Us</p></Link>
                         </div>
                         </div>
                 </div>

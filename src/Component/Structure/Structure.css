@@ -5,13 +5,25 @@
     color: white;
 }
 .serviceBg {
-    /* background-color: #002060; */
-    background-image: url(../../assets/USP//bg-01.png);
-    /* background-position: left; */
-    padding: 50px;
+    position: relative;
+    padding-top: 40px;
     color: white;
-}
-
+  }
+  
+  .serviceBg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0; /* Align the background image to the right */
+    width: 100%; /* Set the width of the background image */
+    height: 100%;
+    background-image: linear-gradient(to left, rgba(0, 32, 96, 0.7), rgba(0, 32, 96, 0));
+    background-image: url(../../assets/USP/bg-01.png), linear-gradient(to left, rgba(0, 32, 96, 0.7), rgba(0, 32, 96, 0));
+    background-repeat: no-repeat;
+    background-size: cover; /* Adjust the background-size property as needed */
+    z-index: -1;
+  }
+  
 .textContainer{
     background-color: #006AAC;
     /* height: auto; */
