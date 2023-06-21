@@ -10,7 +10,7 @@
     top: 0;
     right: 0; /* Align the background image to the right */
     width: 100%; /* Set the width of the background image */
-    height: 55vh;
+    height: 52vh;
     background-image: linear-gradient(to left, rgba(0, 32, 96, 0.7), rgba(0, 32, 96, 0));
     background-image: url(../../assets/USP/bgpyramid-01.png), linear-gradient(to left, rgba(0, 32, 96, 0.7), rgba(0, 32, 96, 0));
     background-repeat: no-repeat;

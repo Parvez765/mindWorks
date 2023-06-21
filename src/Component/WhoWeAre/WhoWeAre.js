@@ -18,7 +18,7 @@ const WhoWeAre = () => {
            <div className='mt-[50px]'>
             <WhoWeArePyramid/>
            </div>
-            <p className='mt-[60px] text-center lg:text-[22px] lg:w-[1400px] block mx-auto'>We believe in bringing about change through process and people transformation.We work with organizations to improve their value chain processes and making them lean. Our strategic, tactical, and operational approach aims to drive change across the value chain which ensures a high success rate in business process improvement. Our customized training solutions are designed to teach people by doing, inspiring them to change for their own good, and for the betterment of the company.</p>
+            <p className='mt-[95px] text-center lg:text-[22px] lg:w-[1400px] block mx-auto'>We believe in bringing about change through process and people transformation.We work with organizations to improve their value chain processes and making them lean. Our strategic, tactical, and operational approach aims to drive change across the value chain which ensures a high success rate in business process improvement. Our customized training solutions are designed to teach people by doing, inspiring them to change for their own good, and for the betterment of the company.</p>
             <FlipCard/>
             <p className='mb-[50px] text-center lg:text-[22px] lg:w-[1400px] block mx-auto'>With international operations and offices in India, Bangladesh and Vietnam, Mindworks offers localized business solutions that cater to the market demands of South-East Asian countries.</p>
         </div>

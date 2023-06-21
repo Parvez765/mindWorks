@@ -84,24 +84,28 @@ const NavBar = () => {
                     activeDropdown === "services" ? "open" : ""
                   }`}
                 >
+                 <Link to="/consulting">
                   <li className="nav-item">
-                    <a
-                      href="#service1"
-                      className="nav-links"
-                      onClick={handleLinkClick}
-                    >
-                      Consulting
-                    </a>
-                  </li>
+                      <a
+                        href="#service1"
+                        className="nav-links"
+                        onClick={handleLinkClick}
+                      >
+                        Consulting
+                      </a>
+                    </li>
+                 </Link>
+                 <Link to="/msi">
                   <li className="nav-item mt-[10px]">
-                    <a
-                      href="#service2"
-                      className="nav-links"
-                      onClick={handleLinkClick}
-                    >
-                      MSI
-                    </a>
-                  </li>
+                      <a
+                        href="#service2"
+                        className="nav-links"
+                        onClick={handleLinkClick}
+                      >
+                        MSI
+                      </a>
+                    </li>
+                 </Link>
                   <li className="nav-item mt-[10px]">
                     <a
                       href="#service3"
@@ -113,17 +117,19 @@ const NavBar = () => {
                   </li>
                 </ul>
               </li>
-              <li
-                className={`nav-item ${
-                  activeDropdown === "about" ? "active" : ""
-                }`}
-                onMouseEnter={() => handleMouseEnter("about")}
-              >
-                <a href="#about" className="nav-link" onClick={handleLinkClick}>
-                  Seed
-                </a>
-              </li>
-              <Link to="/lean"><li
+              <Link to="/seed">
+                <li
+                  className={`nav-item ${
+                    activeDropdown === "about" ? "active" : ""
+                  }`}
+                  onMouseEnter={() => handleMouseEnter("about")}
+                >
+                  <a href="#about" className="nav-link" onClick={handleLinkClick}>
+                    Seed
+                  </a>
+                </li>
+              </Link>
+              <Link to="/leantransformation"><li
                 className={`nav-item ${
                   activeDropdown === "contact" ? "active" : ""
                 }`}
@@ -238,22 +244,28 @@ const NavBar = () => {
                     <details>
                       <summary className="nav-links">Services</summary>
                       <ul className="p-2">
+                       <Link to="/consulting">
                         <li className="nav-links">
-                          <a>Consulting</a>
-                        </li>
-                        <li className="nav-links">
-                          <a>Msi</a>
-                        </li>
+                            <a>Consulting</a>
+                          </li>
+                       </Link>
+                        <Link to="/msi">
+                          <li className="nav-links">
+                            <a>Msi</a>
+                          </li>
+                        </Link>
                         <li className="nav-links">
                           <a>Traning</a>
                         </li>
                       </ul>
                     </details>
                   </li>
-                  <li className="nav-links">
-                    <a>Seed</a>
-                  </li>
-                  <Link to="/lean"><li className="nav-links">
+                  <Link to="/seed">
+                    <li className="nav-links">
+                      <a>Seed</a>
+                    </li>
+                  </Link>
+                  <Link to="/leantransformation"><li className="nav-links">
                     <a>Lean Transformation</a>
                   </li></Link>
                   <li>

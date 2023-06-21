@@ -4,6 +4,12 @@ import HomePage from "../Pages/HomePage/HomePage";
 import Contact from "../Pages/HomePage/Contact/Contact";
 import TestimonialPage from "../Pages/TestimonialPage/TestimonialPage";
 import About from "../Pages/About/About";
+import LeanTransformationPage from "../Pages/LeanTransformationPage/LeanTransformationPage";
+import Seed from "../Pages/Seed/Seed";
+import Consulting from "../Component/Consulting/Consulting";
+import MSI from "../Component/MSI/MSI";
+
+
 
 export const router = createBrowserRouter([
     {
@@ -20,8 +26,17 @@ export const router = createBrowserRouter([
             {
                 path: "/whoweare", element: <About/>
             },
+            // {
+            //     path : "/leantransformation", element: <LeanTransformationPage/>
+            // }
             {
-                path: "/lean", element: <About/>
+                path : '/seed', element: <Seed/>
+            },
+            {
+                path: "/consulting", element: <Consulting/>
+            },
+            {
+                path: "/msi", element: <MSI/>
             }
         ]
     }
