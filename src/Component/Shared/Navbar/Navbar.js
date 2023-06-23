@@ -106,6 +106,7 @@ const NavBar = () => {
                       </a>
                     </li>
                  </Link>
+                 <Link to="/training">
                   <li className="nav-item mt-[10px]">
                     <a
                       href="#service3"
@@ -115,6 +116,8 @@ const NavBar = () => {
                       Training
                     </a>
                   </li>
+                 </Link>
+                 
                 </ul>
               </li>
               <Link to="/seed">
@@ -254,9 +257,11 @@ const NavBar = () => {
                             <a>Msi</a>
                           </li>
                         </Link>
-                        <li className="nav-links">
-                          <a>Traning</a>
-                        </li>
+                        <Link to="/training">
+                          <li className="nav-links">
+                            <a>Training</a>
+                          </li>
+                        </Link>
                       </ul>
                     </details>
                   </li>

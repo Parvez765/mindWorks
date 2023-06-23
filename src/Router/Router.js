@@ -8,6 +8,7 @@ import LeanTransformationPage from "../Pages/LeanTransformationPage/LeanTransfor
 import Seed from "../Pages/Seed/Seed";
 import Consulting from "../Component/Consulting/Consulting";
 import MSI from "../Component/MSI/MSI";
+import Training from "../Component/Training/Training";
 
 
 
@@ -37,6 +38,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/msi", element: <MSI/>
+            },
+            {
+                path: "/training", element : <Training/>
             }
         ]
     }
