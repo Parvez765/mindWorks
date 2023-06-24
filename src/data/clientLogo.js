@@ -166,6 +166,170 @@ const clientLogos = [
     {
         id: 42,
         img: "https://i.ibb.co/DWfhcLx/bno-lubjfif-removebg-preview.png"
+    },
+    {
+        id: 43,
+        img: "https://i.ibb.co/dfV7sLV/e-cab-removebg-preview.png"
+    },
+    {
+        id: 44,
+        img: "https://i.ibb.co/2S4SNQ8/LOGO-of-LFMEAB-Main-removebg-preview.png"
+    },
+    {
+        id: 45,
+        img: "https://i.ibb.co/R0wSZSj/COEL-orgbcahfhq36vd41029z82aj6vnpha8916b0kledc0-removebg-preview.png"
+    },
+    {
+        id: 46,
+        img: "https://i.ibb.co/khGcVJS/dbi-logo-new-300x52-removebg-preview.png"
+    },
+    {
+        id: 47,
+        img: "https://i.ibb.co/4tyv9T0/Daffodil-Uni1-removebg-preview.png"
+    },
+    {
+        id: 48,
+        img: "https://i.ibb.co/wCPXTs7/1603179782897-p16xotcwrxmj336qqf2ty5xjljlhsfoxir2621a4u8-removebg-preview.png"
+    },
+    {
+        id: 49,
+        img: "https://i.ibb.co/8sh5P5m/AITL-logo-sm-removebg-preview.png"
+    },
+    {
+        id: 50,
+        img: "https://i.ibb.co/JRkJc8Q/Akij-Shipping-removebg-preview.png"
+    },
+    {
+        id: 51,
+        img: "https://i.ibb.co/Qnc0T85/akijflourmillsltd-removebg-preview.png"
+    },
+    {
+        id: 52,
+        img: "https://i.ibb.co/fvDdYMz/novartis-removebg-preview.png"
+    },
+    {
+        id: 53,
+        img: "https://i.ibb.co/jyyHqjQ/singer-removebg-preview.png"
+    },
+    {
+        id: 54,
+        img: "https://i.ibb.co/tQ1rQqW/Apex-removebg-preview.png"
+    },
+    {
+        id: 55,
+        img: "https://i.ibb.co/CtvhKk3/excellent-world-removebg-preview.png"
+    },
+    {
+        id: 56,
+        img: "https://i.ibb.co/6JXC3K7/vivo-1-300x101-removebg-preview.png"
+    },
+    {
+        id: 57,
+        img: "https://i.ibb.co/HTQYz4k/Asrotex-group.jpg"
+    },
+    {
+        id: 58,
+        img: "https://i.ibb.co/q7DxsVJ/1519876129186-p6diowqag05hh9mny0yloq3w1ake1yxxlhppbo2vi8-removebg-preview.png"
+    },
+    {
+        id: 59,
+        img: "https://i.ibb.co/zJ82YC5/bay-dev-p6dipn1rrd5iickfocc5mjgso2yo1huf13zarezuo0-removebg-preview.png"
+    },
+    {
+        id: 60,
+        img: "https://i.ibb.co/F32X6rY/aci-group-logo-150x150.png"
+    },
+    {
+        id: 61,
+        img: "https://i.ibb.co/tYFTBXQ/cement-logo-p6diprqypjby4edlwwdah0a3n0bi3zd2pr8q5ssvsw-removebg-preview.png"
+    },
+    {
+        id: 62,
+        img: "https://i.ibb.co/Zg34Rx4/infrastructure-logo-300x69-removebg-preview.png"
+    },
+    {
+        id: 63,
+        img: "https://i.ibb.co/T44x3FQ/download-300x166-removebg-preview.png"
+    },
+    {
+        id: 64,
+        img: "https://i.ibb.co/Q6h5rhr/confidence-group-vector-logo-300x69-removebg-preview.png"
+    },
+    {
+        id: 65,
+        img: "https://i.ibb.co/Bt8kwz4/beximcocom-removebg-preview.png"
+    },
+    {
+        id: 66,
+        img: "https://i.ibb.co/TH33hVT/DCL-Logo1-300x73-removebg-preview.png"
+    },
+    {
+        id: 67,
+        img: "https://i.ibb.co/QnWcGr9/Elevate-textiles-300x58-removebg-preview.png"
+    },
+    {
+        id: 68,
+        img: "https://i.ibb.co/MgDXC3X/banglacat-300x83-removebg-preview.png"
+    },
+    {
+        id: 69,
+        img: "https://i.ibb.co/C6yLL01/k-line-logo-png-transparent-300x77-removebg-preview.png"
+    },
+    {
+        id: 70,
+        img: "https://i.ibb.co/kBjQ3mM/maf-shoes-300x123-removebg-preview.png"
+    },
+    {
+        id: 71,
+        img: "https://i.ibb.co/nQJRnrx/biman-bangladesh-airlines-logo-png-300x154-removebg-preview.png"
+    },
+    {
+        id: 72,
+        img: "https://i.ibb.co/K9TxcVp/ucb-bank-logo-300x148-removebg-preview.png"
+    },
+    {
+        id: 73,
+        img: "https://i.ibb.co/kSF0hmr/Islami-Bank-300x169-removebg-preview.png"
+    },
+    {
+        id: 74,
+        img: "https://i.ibb.co/VW2VwfD/unnamed-300x90-removebg-preview.png"
+    },
+    {
+        id: 75,
+        img: "https://i.ibb.co/pzGKCMk/The-ACMELaboratories-Ltd-removebg-preview.png"
+    },
+    {
+        id: 76,
+        img: "https://i.ibb.co/Wp1JdhY/SAJIDA-Foundation-Logo-pvnxufvtcpvicv0gcomwto9mdeds7e47jno5aydwjk-removebg-preview.png"
+    },
+    {
+        id: 77,
+        img: "https://i.ibb.co/VpGPNng/geostee-150x150.jpg"
+    },
+    {
+        id: 78,
+        img: "https://i.ibb.co/Qb8X46v/square-group-logo-pvnxuhrhqdy302xq1pg5ynsjk64imsbo7wz49ib474-removebg-preview.png"
+    },
+    {
+        id: 79,
+        img: "https://i.ibb.co/DrZBdbS/Pickard-300x131-1.jpg"
+    },
+    {
+        id: 80,
+        img: "https://i.ibb.co/ts5PVxs/shanta-group-300x110.jpg"
+    },
+    {
+        id: 81,
+        img: "https://i.ibb.co/y03p3WJ/sailor-removebg-preview.png"
+    },
+    {
+        id: 82,
+        img: "https://i.ibb.co/wzkKBMT/epyllion-150x150-removebg-preview.png"
+    },
+    {
+        id: 83,
+        img: "https://i.ibb.co/GTGtKjL/dewhirst-300x95.png"
     }
 ]
 
