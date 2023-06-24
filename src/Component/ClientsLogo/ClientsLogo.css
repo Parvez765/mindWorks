@@ -46,6 +46,13 @@ body {
     }
 }
 
+
+
+.swiper-wrapper{
+    display: flex;
+    align-items: center;
+}
+
 @keyframes scroll-right {
     0% {
         transform: translateX(0);

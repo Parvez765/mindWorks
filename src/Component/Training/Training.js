@@ -12,11 +12,11 @@ const Training = () => {
                 <p className='text-center mt-[50px] lg:text-[22px] text-[#002266] font-bold'>Below are a few of the functions we offer training modules in:</p>
                 <div className=''  data-aos="fade-up">
                     <div className='mt-[50px] mb-[50px]'>
-                        <img src="https://i.ibb.co/mFpG0qd/imageone.jpg" className='rounded-lg lg:w-[800px] block mx-auto' alt="Mind Works Training Modules" />
+                        <img src="https://i.ibb.co/mFpG0qd/imageone.jpg" className='rounded-lg' alt="Mind Works Training Modules" />
                     </div>
                     <div>
-                        <h1 className='text-[35px] text-[#002266] font-bold text-center leading-[40px]'>Management Systems and Efficiency Improvement</h1>
-                        <p className='mt-[20px] text-center lg:text-[22px] mb-[20px]'> We offer training solutions that improve manufacturing processes through the implementation of Lean Practices, Six Sigma, 5S methodologies, and more. The focus of these training modules is on achieving continuous improvement and enabling organizations to build a team that can sustain continuous growth.</p>
+                        <h1 className='text-[35px] text-[#002266] font-bold leading-[40px]'>Management Systems and Efficiency Improvement</h1>
+                        <p className='mt-[20px] lg:text-[22px] mb-[20px]'> We offer training solutions that improve manufacturing processes through the implementation of Lean Practices, Six Sigma, 5S methodologies, and more. The focus of these training modules is on achieving continuous improvement and enabling organizations to build a team that can sustain continuous growth.</p>
                         <div className='grid lg:grid-cols-2 justify-center items-center gap-[15px]'>
                             {
                                 training?.map(tr =>
@@ -32,11 +32,11 @@ const Training = () => {
                     </div>
 
                     <div className='mt-[100px] mb-[50px]'>
-                        <img src="https://i.ibb.co/w0zMmYY/consulting-3055704-1280.jpg" className='rounded-lg lg:w-[800px] block mx-auto' alt="Mind Works Training Modules" />
+                        <img src="https://i.ibb.co/w0zMmYY/consulting-3055704-1280.jpg" className='rounded-lg' alt="Mind Works Training Modules" />
                     </div>
                     <div>
-                        <h1 className='text-[35px] text-[#002266] font-bold text-center leading-[40px]'>Personal and Soft Skills</h1>
-                        <p className='mt-[20px] text-center lg:text-[22px] mb-[20px]'> One of the most crucial aspects for businesses is employee development, soft skills, and personality development. Communication etiquette is important at all levels management – junior, mid, and senior level. Soft Skill training modules are designed considering the current state of skill sets and seniority in the company. With over 20 years of experience, our key consultants are experts that can help your organisation hone employee personalities and communication skills.</p>
+                        <h1 className='text-[35px] text-[#002266] font-bold leading-[40px]'>Personal and Soft Skills</h1>
+                        <p className='mt-[20px] lg:text-[22px] mb-[20px]'> One of the most crucial aspects for businesses is employee development, soft skills, and personality development. Communication etiquette is important at all levels management – junior, mid, and senior level. Soft Skill training modules are designed considering the current state of skill sets and seniority in the company. With over 20 years of experience, our key consultants are experts that can help your organisation hone employee personalities and communication skills.</p>
                         <div className='grid lg:grid-cols-2 justify-center items-center gap-[15px]'>
                             {
                                 skills?.map(tr =>
@@ -52,10 +52,10 @@ const Training = () => {
                     </div>
 
                     <div className='mt-[100px] mb-[50px]'>
-                        <img src="https://i.ibb.co/mcKSNdP/accounts-1238828-1280.jpg" className='rounded-lg lg:w-[800px] block mx-auto' alt="Mind Works Training Modules" />
+                        <img src="https://i.ibb.co/mcKSNdP/accounts-1238828-1280.jpg" className='rounded-lg' alt="Mind Works Training Modules" />
                     </div>
                     <div>
-                        <h1 className='text-[35px] text-[#002266] font-bold text-center leading-[40px] mb-[20px]'>Sales Management Training</h1>
+                        <h1 className='text-[35px] text-[#002266] font-bold leading-[40px] mb-[20px]'>Sales Management Training</h1>
                         {/* <p className='mt-[20px] text-center lg:text-[22px] mb-[20px]'> One of the most crucial aspects for businesses is employee development, soft skills, and personality development. Communication etiquette is important at all levels management – junior, mid, and senior level. Soft Skill training modules are designed considering the current state of skill sets and seniority in the company. With over 20 years of experience, our key consultants are experts that can help your organisation hone employee personalities and communication skills.</p> */}
                         <div className='grid lg:grid-cols-2 justify-center items-center gap-[15px]'>
                             {
@@ -72,10 +72,10 @@ const Training = () => {
                     </div>
 
                     <div className='mt-[100px] mb-[50px]'>
-                        <img src="https://i.ibb.co/02kkb7N/business-4677631-1280.jpg" className='rounded-lg lg:w-[800px] block mx-auto' alt="Mind Works Training Modules" />
+                        <img src="https://i.ibb.co/02kkb7N/business-4677631-1280.jpg" className='rounded-lg' alt="Mind Works Training Modules" />
                     </div>
                     <div>
-                        <h1 className='text-[35px] text-[#002266] font-bold text-center leading-[40px] mb-[20px]'>HR Management Training</h1>
+                        <h1 className='text-[35px] text-[#002266] font-bold leading-[40px] mb-[20px]'>HR Management Training</h1>
                         {/* <p className='mt-[20px] text-center lg:text-[22px] mb-[20px]'> One of the most crucial aspects for businesses is employee development, soft skills, and personality development. Communication etiquette is important at all levels management – junior, mid, and senior level. Soft Skill training modules are designed considering the current state of skill sets and seniority in the company. With over 20 years of experience, our key consultants are experts that can help your organisation hone employee personalities and communication skills.</p> */}
                         <div className='grid lg:grid-cols-2 justify-center items-center gap-[15px]'>
                             {
