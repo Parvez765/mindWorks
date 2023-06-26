@@ -1,41 +1,30 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import {
-  FaAngleDown,
-  FaBars,
-  FaFacebook,
-  FaInstagram,
-  FaLinkedin,
-  FaRegMoon,
-  FaShareSquare,
-  FaTwitter,
-} from "react-icons/fa";
+import { FaAngleDown, FaBars, FaFacebook, FaInstagram, FaLinkedin, FaRegMoon, FaShareSquare, FaTwitter } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import './Navbar.css'
 
 const NavBar = () => {
   const [cross, setCross] = useState(true);
-
   const [isOpen, setIsOpen] = useState(false);
-  const [activeDropdown, setActiveDropdown] = useState(null);
+  const [activeServicesDropdown, setActiveServicesDropdown] = useState(null);
+  const [activeAboutDropdown, setActiveAboutDropdown] = useState(null);
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
   };
 
-  const handleLinkClick = () => {
-    setIsOpen(false);
+  const handleMouseEnterServices = (dropdown) => {
+    setActiveServicesDropdown(dropdown);
   };
 
-  const handleLinksClick = () => {
-    setIsOpen(false);
-  };
-
-  const handleMouseEnter = (dropdown) => {
-    setActiveDropdown(dropdown);
+  const handleMouseEnterAbout = (dropdown) => {
+    setActiveAboutDropdown(dropdown);
   };
 
   const handleMouseLeave = () => {
-    setActiveDropdown(null);
+    setActiveServicesDropdown(null);
+    setActiveAboutDropdown(null);
   };
 
   const handleShareClick = () => {
@@ -68,99 +57,90 @@ const NavBar = () => {
             <ul className="navbar-nav ">
               <li
                 className={`nav-item dropdown ${
-                  activeDropdown === "services" ? "active" : ""
+                  activeServicesDropdown === "services" ? "active" : ""
                 }`}
-                onMouseEnter={() => handleMouseEnter("services")}
+                onMouseEnter={() => handleMouseEnterServices("services")}
               >
                 <button
                   className="dropdown-toggle serviceToggle flex items-center gap-[6px]"
-                  onClick={toggleNavbar}
-                  onBlur={() => setIsOpen(false)}
                 >
                   Services <FaAngleDown />
                 </button>
                 <ul
                   className={`dropdown-menu ${
-                    activeDropdown === "services" ? "open" : ""
+                    activeServicesDropdown === "services" ? "open" : ""
                   }`}
                 >
-                 <Link to="/consulting">
-                  <li className="nav-item">
+                  <Link to="/consulting">
+                    <li className="nav-item">
                       <a
                         href="#service1"
                         className="nav-links"
-                        onClick={handleLinkClick}
                       >
                         Consulting
                       </a>
                     </li>
-                 </Link>
-                 <Link to="/msi">
-                  <li className="nav-item mt-[10px]">
+                  </Link>
+                  <Link to="/msi">
+                    <li className="nav-item mt-[10px]">
                       <a
                         href="#service2"
                         className="nav-links"
-                        onClick={handleLinkClick}
                       >
                         MSI
                       </a>
                     </li>
-                 </Link>
-                 <Link to="/training">
-                  <li className="nav-item mt-[10px]">
-                    <a
-                      href="#service3"
-                      className="nav-links"
-                      onClick={handleLinkClick}
-                    >
-                      Training
-                    </a>
-                  </li>
-                 </Link>
-                 
+                  </Link>
+                  <Link to="/training">
+                    <li className="nav-item mt-[10px]">
+                      <a
+                        href="#service3"
+                        className="nav-links"
+                      >
+                        Training
+                      </a>
+                    </li>
+                  </Link>
                 </ul>
               </li>
               <Link to="/seed">
                 <li
                   className={`nav-item ${
-                    activeDropdown === "about" ? "active" : ""
+                    activeServicesDropdown === "seed" ? "active" : ""
                   }`}
-                  onMouseEnter={() => handleMouseEnter("about")}
+                  onMouseEnter={() => handleMouseEnterAbout("seed")}
                 >
-                  <a href="#about" className="nav-link" onClick={handleLinkClick}>
+                  <a href="#seed" className="nav-link">
                     Seed
                   </a>
                 </li>
               </Link>
-              <Link to="/leantransformation"><li
-                className={`nav-item ${
-                  activeDropdown === "contact" ? "active" : ""
-                }`}
-                onMouseEnter={() => handleMouseEnter("contact")}
-              >
-                <a
-                  className="nav-link"
-                  onClick={handleLinkClick}
+              <Link to="/leantransformation">
+                <li
+                  className={`nav-item ${
+                    activeServicesDropdown === "contact" ? "active" : ""
+                  }`}
+                  onMouseEnter={() => handleMouseEnterAbout("contact")}
                 >
-                  Lean Transformation
-                </a>
-              </li></Link>
+                  <a className="nav-link">
+                    Lean Transformation
+                  </a>
+                </li>
+              </Link>
               <li
                 className={`nav-item dropdown ${
-                  activeDropdown === "about" ? "active" : ""
+                  activeAboutDropdown === "about" ? "active" : ""
                 }`}
-                onMouseEnter={() => handleMouseEnter("about")}
+                onMouseEnter={() => handleMouseEnterAbout("about")}
               >
                 <button
                   className="dropdown-toggle serviceToggle flex items-center gap-[6px]"
-                  onClick={toggleNavbar}
-                  onBlur={() => setIsOpen(false)}
                 >
                   About Us <FaAngleDown />
                 </button>
                 <ul
                   className={`dropdown-menu ${
-                    activeDropdown === "about" ? "open" : ""
+                    activeAboutDropdown === "about" ? "open" : ""
                   }`}
                 >
                   <Link to="/whoweare">
@@ -168,31 +148,26 @@ const NavBar = () => {
                       <a
                         href="#about2"
                         className="nav-links"
-                        onClick={handleLinksClick}
                       >
                         Who We Are
                       </a>
                     </li>
                   </Link>
                   <Link to="/testimonial">
-                    {" "}
                     <li className="nav-item mt-[10px]">
                       <a
                         href="#about1"
                         className="nav-links"
-                        onClick={handleLinksClick}
                       >
                         Testimonial
                       </a>
                     </li>
                   </Link>
                   <Link to="/contact">
-                    {" "}
                     <li className="nav-item mt-[10px]">
                       <a
                         href="#about1"
                         className="nav-links"
-                        onClick={handleLinksClick}
                       >
                         Contact
                       </a>
@@ -200,20 +175,17 @@ const NavBar = () => {
                   </Link>
                 </ul>
               </li>
-              {/* <Link to="/contact"><li className="nav-item">
-                <a href="#contact" className="nav-link" onClick={handleLinkClick}>
-                  Contact
-                </a>
-              </li></Link> */}
             </ul>
+           <Link to="/contact">
             <div className="ml-[16px]">
               <button className="appoinmentBtn">Schedule a call</button>
             </div>
+           </Link>
           </div>
         </div>
         {/* Mobile View */}
         <div className="block lg:hidden" onClick={handleDrawerToggle}>
-          {cross ? <FaBars className="text-[white] text-[22px]" /> : null}
+          <FaBars className="text-[white] text-[22px]" />
         </div>
       </div>
       {/* Drawer Section */}
@@ -247,11 +219,11 @@ const NavBar = () => {
                     <details>
                       <summary className="nav-links">Services</summary>
                       <ul className="p-2">
-                       <Link to="/consulting">
-                        <li className="nav-links">
+                        <Link to="/consulting">
+                          <li className="nav-links">
                             <a>Consulting</a>
                           </li>
-                       </Link>
+                        </Link>
                         <Link to="/msi">
                           <li className="nav-links">
                             <a>Msi</a>
@@ -270,9 +242,11 @@ const NavBar = () => {
                       <a>Seed</a>
                     </li>
                   </Link>
-                  <Link to="/leantransformation"><li className="nav-links">
-                    <a>Lean Transformation</a>
-                  </li></Link>
+                  <Link to="/leantransformation">
+                    <li className="nav-links">
+                      <a>Lean Transformation</a>
+                    </li>
+                  </Link>
                   <li>
                     <details>
                       <summary className="nav-links">About Us</summary>
@@ -282,19 +256,16 @@ const NavBar = () => {
                             <a
                               href="#about2"
                               className="nav-links"
-                              onClick={handleLinksClick}
                             >
                               Who We Are
                             </a>
                           </li>
                         </Link>
                         <Link to="/testimonial">
-                          {" "}
                           <li className="nav-item mt-[10px]">
                             <a
                               href="#about1"
                               className="nav-links"
-                              onClick={handleLinksClick}
                             >
                               Testimonial
                             </a>
@@ -305,16 +276,17 @@ const NavBar = () => {
                             <a>Contact</a>
                           </li>
                         </Link>
-                        {/* <Link to="/contact"><li><a>Contact</a></li></Link> */}
                       </ul>
                     </details>
                   </li>
 
+                 <Link to="/contact">
                   <div className="mt-[20px]">
-                    <button className="appoinmentMobileBtn">
-                      Schedule a call
-                    </button>
-                  </div>
+                        <button className="appoinmentMobileBtn">
+                          Schedule a call
+                        </button>
+                    </div>
+                 </Link>
                   <div className="flex items-center gap-[16px] mt-[20px] ml-[5px]">
                     <FaFacebook className="text-black text-[22px]" />
                     <FaTwitter className="text-black  text-[22px]" />
@@ -332,3 +304,5 @@ const NavBar = () => {
 };
 
 export default NavBar;
+
+// I removed the `onClick` handlers from the anchor (`<a>`) elements inside the navbar as they were unnecessary and causing the issue.

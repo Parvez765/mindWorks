@@ -27,9 +27,9 @@ export const router = createBrowserRouter([
             {
                 path: "/whoweare", element: <About/>
             },
-            // {
-            //     path : "/leantransformation", element: <LeanTransformationPage/>
-            // }
+            {
+                path : "/leantransformation", element: <LeanTransformationPage/>
+            },
             {
                 path : '/seed', element: <Seed/>
             },

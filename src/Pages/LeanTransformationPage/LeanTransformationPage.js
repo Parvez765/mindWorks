@@ -1,6 +1,7 @@
 import React from 'react';
 import LeanTransformation from '../../Component/LeanTransformation/LeanTransformation';
 
+
 const LeanTransformationPage = () => {
     return (
         <div>
