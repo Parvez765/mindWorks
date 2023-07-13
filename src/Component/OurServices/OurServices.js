@@ -16,9 +16,9 @@ const OurServices = () => {
                             <div className='mt-[12px]'><button className='flex items-center learnBtn'>Learn More <FaAngleRight/></button></div>
                         </div>
                     </div>
-                    <div className='grid grid-cols-1 lg:grid-cols-2 justify-between  gap-[20px] lg:gap-[50px] mt-[100px]'>
+                    <div className='grid grid-cols-1 lg:grid-cols-2 justify-items-center gap-[20px] lg:gap-[50px] mt-[100px]'>
                         <div data-aos="fade-right">
-                            <h3 className='imageHeadingOne leading-[45px]'>MANAGEMENT SYSTEM IMPLEMENTATION</h3>
+                            <h3 className='imageHeadingOne leading-[45px] pr-[20px] lg:pr-[0px]'>MANAGEMENT SYSTEM IMPLEMENTATION</h3>
                             <p className='imageHeadingPara lg:text-[22px]'>Value stream mapping and rapid strategy deployment to achieve project and business goals.</p>
                             <div className='mt-[12px]'><button className='flex items-center learnBtn'>Learn More <FaAngleRight/></button></div>
                         </div>

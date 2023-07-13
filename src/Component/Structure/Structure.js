@@ -9,12 +9,10 @@ const Structure = () => {
                 <h1 className='ourServiceText text-center lg:text-left lg:mb-[16px] text-[35px] lg:text-[50px] leading-[50px] mb-[50px]' data-aos="fade-right">What is Mind Works?</h1>
                 <div className='flex flex-col 2xl:flex-row gap-[150px]'>
                     <div>
-                        <p className='text-center lg:text-left 2xl:w-[600px]' data-aos="zoom-in-up">Mindworks is an organization that strives to achieve excellence through
+                        <p className='text-center lg:text-left 2xl:w-[600px] px-[40px] lg:p-[0px]' data-aos="zoom-in-up">Mindworks is an organization that strives to achieve excellence through
                             people transformation. We help companies achieve operational excellence
                             through continuous improvement. The Minworks Way is to work with your
-                            organization to help you achieve lean operations and build a culture of
-
-                            continuous improvement. Mindworks’ core philosophy is that in business, there is no one-size-fits-all
+                            organization to help you achieve lean operations and build a culture of continuous improvement. Mindworks’ core philosophy is that in business, there is no one-size-fits-all
                             solution. Each problem is different and hence requires a totally customized
                             solution. With this core value, Mindworks provides customized solutions to
                             help organizations improve productivity and efficiency, reduce defect rate and
