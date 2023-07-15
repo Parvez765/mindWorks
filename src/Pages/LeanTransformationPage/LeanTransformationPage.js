@@ -5,7 +5,7 @@ import LeanTransformation from '../../Component/LeanTransformation/LeanTransform
 const LeanTransformationPage = () => {
     return (
         <div>
-            {/* <LeanTransformation/> */}
+            <LeanTransformation/>
         </div>
     );
 };

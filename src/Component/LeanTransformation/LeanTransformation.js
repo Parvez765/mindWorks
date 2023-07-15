@@ -1,24 +1,17 @@
 import React, { useState } from "react";
-import { Document, Page } from 'react-pdf';
+
 
 const LeanTransformation = () => {
-    const [numPages, setNumPages] = useState(null);
-    const [pageNumber, setPageNumber] = useState(1);
+  
+ 
 
-    function onDocumentLoadSuccess({ numPages }) {
-        setNumPages(numPages);
-    }
-
-    return (
-        <div>
-            <Document file="./transformation.pdf" onLoadSuccess={onDocumentLoadSuccess}>
-                <Page pageNumber={pageNumber} />
-            </Document>
-            <p>
-                Page {pageNumber} of {numPages}
-            </p>
-        </div>
-    );
+  return (
+    <div className="mt-[50px]">
+      <div className="container mx-auto">
+        <img src="https://i.ibb.co/16RFXBm/Mindworksbd-Lean-Transformation.jpg" alt="Mind works Pdf" className="w-[650px] block mx-auto"/>
+      </div>
+    </div>
+  )
 };
 
 export default LeanTransformation;
