@@ -191,7 +191,7 @@ const NavBar = () => {
       {/* Drawer Section */}
       <div className="block lg:hidden">
         {cross ? (
-          <div></div>
+           <div></div>
         ) : (
           <div className="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
@@ -304,5 +304,3 @@ const NavBar = () => {
 };
 
 export default NavBar;
-
-// I removed the `onClick` handlers from the anchor (`<a>`) elements inside the navbar as they were unnecessary and causing the issue.
