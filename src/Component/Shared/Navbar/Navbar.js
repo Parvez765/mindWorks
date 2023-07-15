@@ -209,7 +209,7 @@ const NavBar = () => {
                 <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
                 <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
                   {/* Sidebar content here */}
-                  <div className="ml-[200px]">
+                  <div className="">
                     <FaShareSquare
                       className="text-[black] text-[22px]"
                       onClick={handleShareClick}
