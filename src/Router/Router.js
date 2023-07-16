@@ -9,6 +9,7 @@ import Seed from "../Pages/Seed/Seed";
 import Consulting from "../Component/Consulting/Consulting";
 import MSI from "../Component/MSI/MSI";
 import Training from "../Component/Training/Training";
+import BlogPage from "../Pages/BlogPage/BlogPage";
 
 
 
@@ -41,6 +42,9 @@ export const router = createBrowserRouter([
             },
             {
                 path: "/training", element : <Training/>
+            },
+            {
+                path : "/blog", element : <BlogPage/>
             }
         ]
     }

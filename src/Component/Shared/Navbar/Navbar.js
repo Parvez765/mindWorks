@@ -127,6 +127,7 @@ const NavBar = () => {
                   </a>
                 </li>
               </Link>
+              
               <li
                 className={`nav-item dropdown ${
                   activeAboutDropdown === "about" ? "active" : ""
@@ -175,6 +176,18 @@ const NavBar = () => {
                   </Link>
                 </ul>
               </li>
+              <Link to="/blog">
+                <li
+                  className={`nav-item ${
+                    activeServicesDropdown === "contact" ? "active" : ""
+                  }`}
+                  onMouseEnter={() => handleMouseEnterAbout("contact")}
+                >
+                  <a className="nav-link">
+                   Blog
+                  </a>
+                </li>
+              </Link>
             </ul>
            <Link to="/contact">
             <div className="ml-[16px]">
@@ -279,7 +292,11 @@ const NavBar = () => {
                       </ul>
                     </details>
                   </li>
-
+                  <Link to="/blog">
+                    <li className="nav-links">
+                      <a>Blog</a>
+                    </li>
+                  </Link>
                  <Link to="/contact">
                   <div className="mt-[20px]">
                         <button className="appoinmentMobileBtn">
