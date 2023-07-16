@@ -11,6 +11,7 @@ const Blog = () => {
                 {
                     blogs?.map((blog => <SingleBlogPage key={blog.id} blog={blog}/>))
                 }
+                
             </div>
         </div>
     );
