@@ -1,11 +1,20 @@
 import React, { useState } from "react";
 import "./Navbar.css";
-import { FaAngleDown, FaBars, FaFacebook, FaInstagram, FaLinkedin, FaRegMoon, FaShareSquare, FaTwitter } from "react-icons/fa";
+import {
+  FaAngleDown,
+  FaBars,
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaRegMoon,
+  FaShareSquare,
+  FaTwitter,
+} from "react-icons/fa";
 import { Link } from "react-router-dom";
-import './Navbar.css'
+import "./Navbar.css";
 
 const NavBar = () => {
-  const [cross, setCross] = useState(true);
+  const [cross, setCross] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [activeServicesDropdown, setActiveServicesDropdown] = useState(null);
   const [activeAboutDropdown, setActiveAboutDropdown] = useState(null);
@@ -61,9 +70,7 @@ const NavBar = () => {
                 }`}
                 onMouseEnter={() => handleMouseEnterServices("services")}
               >
-                <button
-                  className="dropdown-toggle serviceToggle flex items-center gap-[6px]"
-                >
+                <button className="dropdown-toggle serviceToggle flex items-center gap-[6px]">
                   Services <FaAngleDown />
                 </button>
                 <ul
@@ -73,30 +80,21 @@ const NavBar = () => {
                 >
                   <Link to="/consulting">
                     <li className="nav-item">
-                      <a
-                        href="#service1"
-                        className="nav-links"
-                      >
+                      <a href="#service1" className="nav-links">
                         Consulting
                       </a>
                     </li>
                   </Link>
                   <Link to="/msi">
                     <li className="nav-item mt-[10px]">
-                      <a
-                        href="#service2"
-                        className="nav-links"
-                      >
+                      <a href="#service2" className="nav-links">
                         MSI
                       </a>
                     </li>
                   </Link>
                   <Link to="/training">
                     <li className="nav-item mt-[10px]">
-                      <a
-                        href="#service3"
-                        className="nav-links"
-                      >
+                      <a href="#service3" className="nav-links">
                         Training
                       </a>
                     </li>
@@ -122,21 +120,17 @@ const NavBar = () => {
                   }`}
                   onMouseEnter={() => handleMouseEnterAbout("contact")}
                 >
-                  <a className="nav-link">
-                    Lean Transformation
-                  </a>
+                  <a className="nav-link">Lean Transformation</a>
                 </li>
               </Link>
-              
+
               <li
                 className={`nav-item dropdown ${
                   activeAboutDropdown === "about" ? "active" : ""
                 }`}
                 onMouseEnter={() => handleMouseEnterAbout("about")}
               >
-                <button
-                  className="dropdown-toggle serviceToggle flex items-center gap-[6px]"
-                >
+                <button className="dropdown-toggle serviceToggle flex items-center gap-[6px]">
                   About Us <FaAngleDown />
                 </button>
                 <ul
@@ -146,30 +140,21 @@ const NavBar = () => {
                 >
                   <Link to="/whoweare">
                     <li className="nav-item">
-                      <a
-                        href="#about2"
-                        className="nav-links"
-                      >
+                      <a href="#about2" className="nav-links">
                         Who We Are
                       </a>
                     </li>
                   </Link>
                   <Link to="/testimonial">
                     <li className="nav-item mt-[10px]">
-                      <a
-                        href="#about1"
-                        className="nav-links"
-                      >
+                      <a href="#about1" className="nav-links">
                         Testimonial
                       </a>
                     </li>
                   </Link>
                   <Link to="/contact">
                     <li className="nav-item mt-[10px]">
-                      <a
-                        href="#about1"
-                        className="nav-links"
-                      >
+                      <a href="#about1" className="nav-links">
                         Contact
                       </a>
                     </li>
@@ -183,28 +168,26 @@ const NavBar = () => {
                   }`}
                   onMouseEnter={() => handleMouseEnterAbout("contact")}
                 >
-                  <a className="nav-link">
-                   Blog
-                  </a>
+                  <a className="nav-link">Blog</a>
                 </li>
               </Link>
             </ul>
-           <Link to="/contact">
-            <div className="ml-[16px]">
-              <button className="appoinmentBtn">Schedule a call</button>
-            </div>
-           </Link>
+            <Link to="/contact">
+              <div className="ml-[16px]">
+                <button className="appoinmentBtn">Schedule a call</button>
+              </div>
+            </Link>
           </div>
         </div>
         {/* Mobile View */}
-        <div className="block lg:hidden" onClick={handleDrawerToggle}>
-          <FaBars className="text-[white] text-[22px]" />
-        </div>
+       
       </div>
       {/* Drawer Section */}
       <div className="block lg:hidden">
         {cross ? (
-           <div></div>
+          <div className="block lg:hidden" onClick={handleDrawerToggle}>
+          <FaBars className="text-[white] text-[22px]" />
+        </div>
         ) : (
           <div className="drawer drawer-end">
             <input id="my-drawer-4" type="checkbox" className="drawer-toggle" />
@@ -266,20 +249,14 @@ const NavBar = () => {
                       <ul className="p-2">
                         <Link to="/whoweare">
                           <li className="nav-item">
-                            <a
-                              href="#about2"
-                              className="nav-links"
-                            >
+                            <a href="#about2" className="nav-links">
                               Who We Are
                             </a>
                           </li>
                         </Link>
                         <Link to="/testimonial">
                           <li className="nav-item mt-[10px]">
-                            <a
-                              href="#about1"
-                              className="nav-links"
-                            >
+                            <a href="#about1" className="nav-links">
                               Testimonial
                             </a>
                           </li>
@@ -297,13 +274,13 @@ const NavBar = () => {
                       <a>Blog</a>
                     </li>
                   </Link>
-                 <Link to="/contact">
-                  <div className="mt-[20px]">
-                        <button className="appoinmentMobileBtn">
-                          Schedule a call
-                        </button>
+                  <Link to="/contact">
+                    <div className="mt-[20px]">
+                      <button className="appoinmentMobileBtn">
+                        Schedule a call
+                      </button>
                     </div>
-                 </Link>
+                  </Link>
                   <div className="flex items-center gap-[16px] mt-[20px] ml-[5px]">
                     <FaFacebook className="text-black text-[22px]" />
                     <FaTwitter className="text-black  text-[22px]" />

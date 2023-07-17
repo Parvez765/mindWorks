@@ -10,6 +10,8 @@ import Consulting from "../Component/Consulting/Consulting";
 import MSI from "../Component/MSI/MSI";
 import Training from "../Component/Training/Training";
 import BlogPage from "../Pages/BlogPage/BlogPage";
+import SingleBlogPage from "../Component/Blog/SingleBlogPage";
+import blogs from '../data/blogs';
 
 
 
@@ -45,6 +47,14 @@ export const router = createBrowserRouter([
             },
             {
                 path : "/blog", element : <BlogPage/>
+            },
+            {
+                path : "/blog/:id",
+                loader : ({params}) => {
+                    const blog = blogs?.find((blog) => blog.id === parseInt(params.id));
+                    return {blog};
+                },
+                element : <SingleBlogPage/>
             }
         ]
     }
