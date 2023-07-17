@@ -49,7 +49,7 @@ const NavBar = () => {
       <div className="container mx-auto navContainer">
         <div className="">
           <Link to="/">
-            {" "}
+            
             <img
               src="https://i.ibb.co/yWx2LpH/navLogo.png"
               alt="Mind WorksBd Navbar Logo"
