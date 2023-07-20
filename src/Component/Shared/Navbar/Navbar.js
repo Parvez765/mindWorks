@@ -45,7 +45,8 @@ const NavBar = () => {
   };
 
   return (
-    <nav className="navbar">
+   <div>
+       <nav className="navbar">
       <div className="container mx-auto navContainer">
         <div className="">
           <Link to="/">
@@ -294,6 +295,7 @@ const NavBar = () => {
         )}
       </div>
     </nav>
+   </div>
   );
 };
 

@@ -17,7 +17,7 @@ const Footer = () => {
                    <a href='https://www.linkedin.com/company/mind-works-bangladesh/' target='_blank'><FaLinkedinIn className='text-[30px]'/></a>
                     </div>
                 </div>
-                <div className='flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[100px]'>
+                <div className='flex flex-col-reverse lg:flex-row gap-[30px] lg:gap-[50px]'>
                     <div>
                         <h1 className='text-[#002060] text-[16px] 2xl:text-[22px] mindWorksHead mb-[20px]'>Our Location</h1>
                         <div>
@@ -37,11 +37,11 @@ const Footer = () => {
                     </div>
                     <div className='mt-[50px] lg:mt-[0px]'>
                     <h1 className='text-[#002060] text-[16px] 2xl:text-[22px] mindWorksHead mb-[20px]'>Our Services</h1>
-                            <p className='mb-[10px]'>Consulting</p>
-                            <p className='mb-[10px]'>MSI</p>
-                            <p className='mb-[10px]'>Training</p>
-                            <p className='mb-[10px]'>SEED</p>
-                            <p className='mb-[10px]'>Lean Transformation</p>
+                          <Link to="/consulting"><p className='mb-[10px]'>Consulting</p></Link>
+                            <Link to="/msi"><p className='mb-[10px]'>MSI</p></Link>
+                            <Link to="/training"><p className='mb-[10px]'>Training</p></Link>
+                            <Link to="/seed"><p className='mb-[10px]'>SEED</p></Link>
+                            <Link to="/leantransformation"><p className='mb-[10px]'>Lean Transformation</p></Link>
                             <div className='mt-[50px]'>
                             <h1 className='text-[#002060] text-[16px] 2xl:text-[22px] mindWorksHead mb-[20px]'>About Us</h1>
                             <Link to="/whoweare"><p className='mb-[10px]'>Who We Are</p></Link>

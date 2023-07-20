@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Blog = () => {
  return (
-    <div className="container mx-auto mt-[50px] mb-[50px]">
+    <div className="container mx-auto mt-[25px] lg:mt-[50px] mb-[50px] p-8">
       <h1 className=" text-[35px] lg:text-[50px] text-center font-bold text-[#002060]">
         Latest Blog Post
       </h1>
