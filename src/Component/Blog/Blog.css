@@ -1,3 +1,9 @@
 .blogPost{
    cursor: pointer;
 }
+.blogImage{
+   border-radius: 12px;
+}
+.blogSingleImage{
+  
+}

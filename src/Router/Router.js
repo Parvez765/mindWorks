@@ -50,11 +50,11 @@ export const router = createBrowserRouter([
             },
             {
                 path : "/blog/:id",
+                element : <SingleBlogPage/>,
                 loader : ({params}) => {
-                    const blog = blogs?.find((blog) => blog.id === parseInt(params.id));
-                    return {blog};
-                },
-                element : <SingleBlogPage/>
+                  const blogSingle = blogs?.find((blog) => blog?.id === parseInt(params?.id));
+                  return blogSingle
+                }
             }
         ]
     }
