@@ -3,7 +3,7 @@ import "./KeyConsultants.css"
 
 const KeyConsultants = () => {
     return (
-        <div className='container mx-auto'>
+        <div className='container mx-auto p-8 lg:p-0'>
             <h1 className='text-center text-[35px] lg:text-[50px] text-[#002060] font-bold pt-10 pb-10'>KeyConsultants</h1>
             <div className='' >
                 <div className='flex flex-col justify-center items-center' data-aos="fade-right">

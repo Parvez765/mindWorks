@@ -8,11 +8,11 @@ const WhoWeArePyramid = () => {
            
            <div className='container mx-auto'>
             
-               <div className='flex ml-[150px] items-start'>
+               <div className='flex lg:ml-[150px] justify-center lg:justify-start lg:items-start'>
                   
                    <div className='flex flex-col' data-aos="zoom-in-left">
                        <div className='flex flex-col-reverse items-center lg:items-center lg:flex-row gap-[5px] lg:gap-[10px]'>
-                           <div className='servicePara  w-[250px] lg:w-[350px] mb-[20px]'>
+                           <div className='servicePara  lg:w-[350px] mb-[20px]'>
                                <p className='justify-center text-center lg:text-right lg:justify-end block mx-auto lg:w-[400px]'>Assess Current State <br />
                                    Identify Improvement Opportunities <br />
                                    Strategy/Policy Deployment</p>

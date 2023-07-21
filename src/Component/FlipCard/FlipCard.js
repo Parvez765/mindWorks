@@ -14,10 +14,10 @@ const FlipCard = () => {
     };
   
     return (
-      <div className='flex'>
+      <div className='flex flex-col lg:flex-row'>
         {/* Card One */}
         <div
-          className={`flip-card lg:w-[750px] block mx-auto  mt-[80px] mb-[80px] ${isCardOneFlipped ? 'flipped' : ''}`}
+          className={`flip-card lg:w-[750px] block mx-auto  mt-[80px] mb-[30px] lg:mb-[80px] ${isCardOneFlipped ? 'flipped' : ''}`}
           onMouseEnter={handleCardOneFlip}
           onMouseLeave={handleCardOneFlip}
         >
@@ -33,7 +33,7 @@ const FlipCard = () => {
   
         {/* Card Two */}
         <div
-          className={`flip-card lg:w-[750px] block mx-auto mt-[80px] mb-[80px] ${isCardTwoFlipped ? 'flipped' : ''}`}
+          className={`flip-card lg:w-[750px] block mx-auto lg:mt-[80px] mb-[30px] lg:mb-[80px] ${isCardTwoFlipped ? 'flipped' : ''}`}
           onMouseEnter={handleCardTwoFlip}
           onMouseLeave={handleCardTwoFlip}
         >

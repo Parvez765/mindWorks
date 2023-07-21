@@ -17,3 +17,12 @@
     background-size: cover; /* Adjust the background-size property as needed */
     z-index: -1;
   }
+  /* For desktop and laptop screens (screen width >= 992px) */
+
+
+/* For smaller screens, set the height to 0 so it's not visible */
+@media (max-width: 991px) {
+  .servicesBg::before {
+    height: 0;
+  }
+}
