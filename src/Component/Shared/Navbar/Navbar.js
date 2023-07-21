@@ -10,6 +10,7 @@ import {
   FaShareSquare,
   FaTwitter,
 } from "react-icons/fa";
+import {GrClose} from "react-icons/gr"
 import { Link } from "react-router-dom";
 import "./Navbar.css";
 
@@ -204,11 +205,11 @@ const NavBar = () => {
             {!cross && (
               <div className="drawer-side">
                 <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-                <ul className="menu p-4 h-full bg-base-200 text-base-content">
+                <ul className="menu p-4 w-50 h-full bg-base-200 text-base-content">
                   {/* Sidebar content here */}
                   <div className="">
-                    <FaShareSquare
-                      className="text-[black] text-[22px]"
+                    <GrClose
+                      className="text-[black] text-[22px] mb-[30px]"
                       onClick={handleShareClick}
                     />
                   </div>
