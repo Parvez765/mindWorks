@@ -204,7 +204,7 @@ const NavBar = () => {
             {!cross && (
               <div className="drawer-side">
                 <label htmlFor="my-drawer-4" className="drawer-overlay"></label>
-                <ul className="menu p-4 w-80 h-full bg-base-200 text-base-content">
+                <ul className="menu p-4 h-full bg-base-200 text-base-content">
                   {/* Sidebar content here */}
                   <div className="">
                     <FaShareSquare
