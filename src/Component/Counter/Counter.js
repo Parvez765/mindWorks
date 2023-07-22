@@ -12,13 +12,13 @@ const Counter = () => {
            <section className='container mx-auto'>
                 <div className='mt-[50px] mb-[50px] grid lg:grid-cols-3 justify-items-center'>
                     <div> <CountUp end={38} duration={8} className='counter' formattingFn={(value) => `${value}%`}/>
-                    <p className='text-[20px] lg:text-[30px] -mt-[16px] font-medium text-white'>Defect Reduction</p>
+                    <p className='text-[20px] 2xl:text-[30px] -mt-[16px] font-medium text-white'>Defect Reduction</p>
                     </div>
                     <div> <CountUp end={35} duration={8} className='counter' formattingFn={(value) => `${value}%`}/>
-                    <p className='text-[20px] lg:text-[30px] -mt-[16px] font-medium text-white'>Efficiency Improvement</p>
+                    <p className='text-[20px] 2xl:text-[30px] -mt-[16px] font-medium text-white'>Efficiency Improvement</p>
                     </div>
                     <div> <CountUp end={25} duration={8} className='counter' formattingFn={(value) => `${value}%`}/>
-                    <p className='text-[20px] lg:text-[30px] -mt-[16px] font-medium text-white'>Lead Time reduction</p>
+                    <p className='text-[20px] 2xl:text-[30px] -mt-[16px] font-medium text-white'>Lead Time reduction</p>
                     </div>
                 </div>
            </section>

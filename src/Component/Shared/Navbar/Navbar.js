@@ -60,7 +60,7 @@ const NavBar = () => {
           </Link>
         </div>
 
-        <div className="hidden lg:block">
+        <div className="hidden 2xl:block">
           <div
             className={`navbar-menu ${isOpen ? "open" : ""}`}
             onMouseLeave={handleMouseLeave}
@@ -181,13 +181,13 @@ const NavBar = () => {
             </Link>
           </div>
         </div>
-        {/* Mobile View */}
+
        
       </div>
       {/* Drawer Section */}
-      <div className="block lg:hidden">
+      <div className="block 2xl:hidden">
         {cross ? (
-          <div className="block lg:hidden" onClick={handleDrawerToggle}>
+          <div className="block 2xl:hidden" onClick={handleDrawerToggle}>
           <FaBars className="text-[white] text-[22px]" />
         </div>
         ) : (
