@@ -121,7 +121,7 @@ const SEED = () => {
           <p className="lg:w-[850px] block mx-auto text-center font-medium text-white">
             SEED is Sustainable Efficiency and Employee Development. It is our specialized solution offering to help businesses enhance the 4 Ps – Processes, People, Product, and Purpose. We offer customized strategies to organizations to help them achieve enhanced productivity and reduced costs. We have successfully transformed businesses across industries to achieve operational excellence with SEED.
           </p>
-          <div ref={progressSectionRef} className="flex flex-col items-center 2xl:flex-row justify-between mt-[50px] mb-[50px]">
+          <div ref={progressSectionRef} className="flex flex-col items-center lg:flex-row justify-between mt-[50px] mb-[50px]">
             {progressConfig.map((config, index) => (
               <div key={index} className="relative">
                 <div style={{ width: '250px', height: '250px' }}>
