@@ -55,12 +55,12 @@ const NavBar = () => {
             <img
               src="https://i.ibb.co/yWx2LpH/navLogo.png"
               alt="Mind WorksBd Navbar Logo"
-              className="w-[150px] lg:w-[300px]"
+              className="w-[120px] lg:w-[300px]"
             />
           </Link>
         </div>
 
-        <div className="hidden 2xl:block">
+        <div className="hidden lg:block">
           <div
             className={`navbar-menu ${isOpen ? "open" : ""}`}
             onMouseLeave={handleMouseLeave}
@@ -176,7 +176,7 @@ const NavBar = () => {
             </ul>
             <Link to="/contact">
               <div className="ml-[16px]">
-                <button className="appoinmentBtn">Schedule a call</button>
+                <button className="appoinmentBtn lg:text-[22px]">Schedule a call</button>
               </div>
             </Link>
           </div>
@@ -185,7 +185,7 @@ const NavBar = () => {
        
       </div>
       {/* Drawer Section */}
-      <div className="block 2xl:hidden">
+      <div className="block lg:hidden">
         {cross ? (
           <div className="block 2xl:hidden" onClick={handleDrawerToggle}>
           <FaBars className="text-[white] text-[22px]" />

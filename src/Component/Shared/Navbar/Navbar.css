@@ -135,3 +135,14 @@
   transition: 0.4s ease-in-out;
   width: 200px;
 }
+
+@media screen and (max-width : 1600px) {
+  .nav-link {
+    
+    font-size: 18px;
+    
+  }
+  .dropdown-toggle {
+    font-size: 18px;
+  }
+}
