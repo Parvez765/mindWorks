@@ -10,7 +10,7 @@ const Counter = () => {
                 <p className='lg:w-[850px] block mx-auto text-center font-medium text-white'>Our humble yet expert team members, specialise in Strategic, Tactical and Operational Leadership, clubbed with General Management and Executive Coaching background. We use a pragmatic systemic approach to analyse situations and facilitate to build implementable solutions. Some of the key achievements in numbers as below.</p>
             </div>
            <section className='container mx-auto'>
-                <div className='mt-[50px] mb-[50px] grid lg:grid-cols-3 justify-items-center'>
+                <div className='mt-[50px] mb-[50px] grid lg:grid-cols-3 justify-items-center text-center'>
                     <div> <CountUp end={38} duration={8} className='counter' formattingFn={(value) => `${value}%`}/>
                     <p className='text-[20px] 2xl:text-[30px] -mt-[16px] font-medium text-white'>Defect Reduction</p>
                     </div>

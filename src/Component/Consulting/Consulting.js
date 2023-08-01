@@ -25,10 +25,10 @@ const Consulting = () => {
             <h1 className='text-[35px] lg:text-[50px] text-[#002060] font-bold text-center'>Consulting</h1>
             <p className='mt-[30px] mb-[30px] lg:text-[22px] text-center'>Every business need has unique problems and we can help you ascertain the solution that is best suited for your company’s success and growth. The first step to treatment is diagnosis; through a current state mapping and consulting assessment, you will be able to understand in depth the solution your business needs to transform. Depending on the result of the current state mapping, our consultants will work closely with you to assess the nature and duration of consulting that will help you meet business goals.</p>
             <div>
-                <div className="flex gap-[30px] -mt-[30px]">
+                <div className="flex flex-col lg:flex-row lg:gap-[30px] -mt-[30px]">
                     {/* Card One */}
                     <div
-                        className={`flip-card lg:w-[750px] block mx-auto mt-[80px] mb-[80px] ${isCardOneFlipped ? 'flipped' : ''
+                        className={`flip-card lg:w-[750px] block mx-auto mt-[80px] lg:mb-[80px] ${isCardOneFlipped ? 'flipped' : ''
                             }`}
                         onMouseEnter={handleCardOneFlip}
                         onMouseLeave={handleCardOneFlip}
@@ -49,7 +49,7 @@ const Consulting = () => {
 
                     {/* Card Two */}
                     <div
-                        className={`flip-card lg:w-[750px] block mx-auto mt-[80px] mb-[80px] ${isCardTwoFlipped ? 'flipped' : ''
+                        className={`flip-card lg:w-[750px] block mx-auto mt-[15px] lg:mt-[80px] lg:mb-[80px] ${isCardTwoFlipped ? 'flipped' : ''
                             }`}
                         onMouseEnter={handleCardTwoFlip}
                         onMouseLeave={handleCardTwoFlip}
@@ -70,7 +70,7 @@ const Consulting = () => {
 
                     {/* Card Three */}
                     <div
-                        className={`flip-card lg:w-[750px] block mx-auto mt-[80px] mb-[80px] ${isCardThreeFlipped ? 'flipped' : ''
+                        className={`flip-card lg:w-[750px] block mx-auto mt-[15px] lg:mt-[80px] mb-[80px] ${isCardThreeFlipped ? 'flipped' : ''
                             }`}
                         onMouseEnter={handleCardThreeFlip}
                         onMouseLeave={handleCardThreeFlip}

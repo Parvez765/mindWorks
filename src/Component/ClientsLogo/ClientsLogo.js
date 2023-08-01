@@ -26,7 +26,7 @@ const ClientsLogo = () => {
                         <Swiper
                             spaceBetween={50}
                             slidesPerView={10}
-                            autoplay={{ delay: 500, disableOnInteraction: false }}
+                            autoplay={{ delay: 100, disableOnInteraction: false }}
                             className='flex items-center justify-center'
 
                         >

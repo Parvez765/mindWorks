@@ -284,10 +284,10 @@ const NavBar = () => {
                     </div>
                   </Link>
                   <div className="flex items-center gap-[16px] mt-[20px] ml-[5px]">
-                    <FaFacebook className="text-black text-[22px]" />
-                    <FaTwitter className="text-black  text-[22px]" />
-                    <FaLinkedin className="text-black  text-[22px]" />
-                    <FaInstagram className="text-black  text-[22px]" />
+                   <a href="https://www.facebook.com/mindworksbangladesh" target="_blank"> <FaFacebook className="text-black text-[22px]" /></a>
+                  <a href="https://twitter.com/MindWorks16" target="_blank"><FaTwitter className="text-black  text-[22px]" /></a>
+                  <a href="https://www.linkedin.com/company/mind-works-bangladesh/" target="_blank"><FaLinkedin className="text-black  text-[22px]" /></a>
+                    {/* <FaInstagram className="text-black  text-[22px]" /> */}
                   </div>
                 </ul>
               </div>
