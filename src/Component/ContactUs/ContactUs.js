@@ -46,7 +46,7 @@ const ContactUs = () => {
 
 
     return (
-        <div className='contactUsContainer'>
+        <div className='contactUsContainer p-[15px] lg:p-[60px]'>
             <div className='container mx-auto mb-[80px]'>
                 <h1 className='text-white flex justify-center items-center text-[35px] lg:text-[50px] text-center font-bold'>Have Some Questions?</h1>
                 <p className='text-white lg:w-[850px] block mx-auto text-center'>For more information and enquirers, please get in touch with us on info@mindworksbd.com. You can also fill out the Contact Form below and we shall get in touch with you.</p>
