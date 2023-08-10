@@ -265,7 +265,7 @@ const clientLogos = [
     },
     {
         id: 68,
-        img: "https://i.ibb.co/MgDXC3X/banglacat-300x83-removebg-preview.png"
+        img: "https://i.ibb.co/hKgbDkN/366113597-1628161371006953-8341113748356052909-n-removebg-preview.png" //Bangla Cat
     },
     {
         id: 69,
@@ -335,21 +335,37 @@ const clientLogos = [
         id: 85,
         img: "https://i.ibb.co/FHDqdMs/islami-bank-bd-ltd-logo-F7304-B1-A93-seeklogo-com.png"
     },
-    {
-        id: 86,
-        img: "https://i.ibb.co/pPHsnSz/RR-Wbesite-Name-Pink.png"
-    },
+    // {
+    //     id: 86,
+    //     img: "https://i.ibb.co/pPHsnSz/RR-Wbesite-Name-Pink.png"
+    // },
     {
         id: 87,
         img: "https://i.ibb.co/mcNfWVr/365855957-1324031274873079-5659088970973383883-n.jpg" //Ejab Group
     },
     {
         id: 88,
-        img: "https://i.ibb.co/XLS13pn/euro.jpg"
+        img: "https://i.ibb.co/hK122TC/euro-removebg-preview.png"
     },
     {
         id: 89,
         img: "https://i.ibb.co/4JBMsjg/colombia.jpg"
+    },
+    {
+        id: 90,
+        img: "https://i.ibb.co/swKJRRQ/shanta.jpg"
+    },
+    {
+        id: 91,
+        img: "https://i.ibb.co/mTSXdQd/epic.jpg"
+    },
+    {
+        id: 92,
+        img: "https://i.ibb.co/hYqgL0P/partex.jpg"
+    },
+    {
+        id: 93,
+        img: "https://i.ibb.co/rbyN4Tx/re.jpg"
     }
 
 ]
