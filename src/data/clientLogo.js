@@ -339,10 +339,7 @@ const clientLogos = [
         id: 86,
         img: "https://i.ibb.co/pPHsnSz/RR-Wbesite-Name-Pink.png"
     },
-    {
-        id: 87,
-        img: "https://i.ibb.co/zfpBY5z/ULAB-logo.png"
-    }
+    
 ]
 
 export default clientLogos
