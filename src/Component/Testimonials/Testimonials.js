@@ -50,25 +50,7 @@ const Testimonials = () => {
                     // onSlideChange={() => console.log('slide change')}
                     autoplay={{ delay: 2000, disableOnInteraction: false }}
                 >
-                    <SwiperSlide>
-                        <div className='testimonialContainer'>
-                            <div className='flex items-start gap-[8px] mb-[10px]'>
-                                <FaStar className='text-yellow-500' />
-                                <FaStar className='text-yellow-500' />
-                                <FaStar className='text-yellow-500' />
-                                <FaStar className='text-yellow-500' />
-                                <FaStar className='text-yellow-500' />
-                            </div>
-                            <p className='mt-[20px] mb-[20px] clamped-text'>Mind Works is an excellent center for self development and Truly a  demonstrative training & consulting platform for thriving and blooming people whose excellence kept hidden. My best wishes remains with Mind Works....<Link to="/testimonial"><span className='text-[#002060] font-medium'>See More</span></Link></p>
-                            <div className='flex items-center gap-[12px] mt-[60px]'>
-                                <img src="https://i.ibb.co/R3bJ6pK/client-One.jpg" className='clientImage' alt="Mind Works Testimonials" />
-                                <div>
-                                    <h4 className='font-bold text-[#002060] text-[16px]'>Nure A. Khan</h4>
-                                    <p>President, BSAHRP, Asst. Professor- SU & FIU, Head of Factory, Envoy Group & Founder</p>
-                                </div>
-                            </div>
-                        </div>
-                    </SwiperSlide>
+                   
                         <SwiperSlide>
                             <div className='testimonialContainer'>
                         <div className='flex items-center gap-[8px] mb-[10px]'>
@@ -121,7 +103,7 @@ const Testimonials = () => {
                             <img src="https://i.ibb.co/QMJ7TRX/client-Four.jpg" className='clientImage' alt="Mind Works Testimonials" />
                             <div>
                                 <h4 className='font-bold text-[#002060] text-[16px]'>Mr. Tarun Kumar Mistry</h4>
-                                <p>DGM and Operations Head of Alim Knit BD Ltd.</p>
+                                <p>GM and Operations Head of Alim Knit BD Ltd.</p>
                             </div>
                         </div>
                             </div>
