@@ -339,7 +339,19 @@ const clientLogos = [
         id: 86,
         img: "https://i.ibb.co/pPHsnSz/RR-Wbesite-Name-Pink.png"
     },
-    
+    {
+        id: 87,
+        img: "https://i.ibb.co/mcNfWVr/365855957-1324031274873079-5659088970973383883-n.jpg" //Ejab Group
+    },
+    {
+        id: 88,
+        img: "https://i.ibb.co/XLS13pn/euro.jpg"
+    },
+    {
+        id: 89,
+        img: "https://i.ibb.co/4JBMsjg/colombia.jpg"
+    }
+
 ]
 
 export default clientLogos
