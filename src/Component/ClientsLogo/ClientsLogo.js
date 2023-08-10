@@ -1,7 +1,7 @@
 import React from 'react';
 import "./ClientsLogo.css"
 import clientLogos from "../../data/clientLogo"
-import clientLogosTwo from '../../data/clientLogos';
+
 import { Navigation, Pagination, Scrollbar, A11y } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -25,7 +25,7 @@ const ClientsLogo = () => {
                     <div className='col-span-10'>
                         <Swiper
                             spaceBetween={50}
-                            slidesPerView={10}
+                            slidesPerView={5}
                             autoplay={{ delay: 100, disableOnInteraction: false }}
                             className='flex items-center justify-center'
 

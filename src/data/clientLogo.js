@@ -68,10 +68,6 @@ const clientLogos = [
         img: "https://i.ibb.co/2g7bnB4/esbl-removebg-preview.png"
     },
     {
-        id: 18,
-        img: "https://i.ibb.co/t4F5NH3/My-Jobsbd-300x158-removebg-preview.png"
-    },
-    {
         id: 19,
         img: "https://i.ibb.co/KN6Y9ZG/SMS-Logo-300x156-removebg-preview.png"
     },
@@ -330,6 +326,22 @@ const clientLogos = [
     {
         id: 83,
         img: "https://i.ibb.co/GTGtKjL/dewhirst-300x95.png"
+    },
+    {
+        id: 84,
+        img: "https://i.ibb.co/VLnmtVx/hqdefault1-removebg-preview.png"
+    },
+    {
+        id: 85,
+        img: "https://i.ibb.co/FHDqdMs/islami-bank-bd-ltd-logo-F7304-B1-A93-seeklogo-com.png"
+    },
+    {
+        id: 86,
+        img: "https://i.ibb.co/pPHsnSz/RR-Wbesite-Name-Pink.png"
+    },
+    {
+        id: 87,
+        img: "https://i.ibb.co/zfpBY5z/ULAB-logo.png"
     }
 ]
 
