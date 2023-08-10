@@ -15,7 +15,7 @@ const Blog = () => {
             <div className="blogContainer lg:p-[10px]">
                <Link to={`/blog/${blog.id}`}><img src={blog?.img} alt="Mind works Blog Page" className="blogImage"/>
               <h2 className="text-[35px] mt-[10px] mb-[10px] font-bold">{blog?.title}</h2>
-              <p>{blog?.details.slice(0, 245)}</p>
+              <p>{blog?.detailsOne.slice(0, 245)}</p>
              
              </Link>
             </div>

@@ -27,7 +27,7 @@ const OurServices = () => {
                     <div className='grid grid-cols-1 lg:grid-cols-2 justify-between gap-[20px] lg:gap-[50px] mt-[100px]'>
                         <img src="https://i.ibb.co/3fHFqPZ/plan-planning-strategy-bysiness-ideas-concept-min.webp" data-aos="fade-right" alt="Our Service List One" className='lg:w-[700px] imageOne' />
                         <div data-aos="fade-left">
-                            <h3 className='imageHeadingOne text-[30px] lg:text-[35px]'>Traning</h3>
+                            <h3 className='imageHeadingOne text-[30px] lg:text-[35px]'>TRAINING</h3>
                             <p className='imageHeadingPara lg:text-[22px]'>Build customized training modules for organizations for soft skills, time management,lean, six sigma, kaizen, and more.</p>
                             <div className='mt-[12px]'><button className='flex items-center learnBtn'>Learn More <FaAngleRight/></button></div>
                         </div>

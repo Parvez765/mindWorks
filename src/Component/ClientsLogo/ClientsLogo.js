@@ -18,7 +18,7 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const ClientsLogo = () => {
     return (
         <div className='p-10 bg-[#d6d6d6]'>
-            <h1 className='text-[35px] lg:text-[50px] mb-[50px] text-center font-bold leading-10 text-[#002060]'>Clients And Associates</h1>
+            <h1 className='text-[35px] lg:text-[50px] mb-[50px] text-center font-bold leading-10 text-[#002060]'>Clients & Associates</h1>
             {/* First Section */}
             <div className='container mx-auto'>
                 <div className='grid grid-cols-10'>
