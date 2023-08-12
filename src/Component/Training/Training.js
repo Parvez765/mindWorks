@@ -21,9 +21,9 @@ const Training = () => {
         </p>
         <div className="text-center mt-[30px]">
         <h1 className="text-[35px] text-[#002266] font-bold leading-[40px]">
-                Management Systems and Efficiency Improvement
+                Management Systems and <br/> Efficiency Improvement
               </h1>
-              <p className="mt-[20px] lg:text-[22px] mb-[20px]">
+              <p className="mt-[20px] lg:text-[22px] mb-[20px]  lg:w-[850px] block mx-auto">
                 {" "}
                 We offer training solutions that improve manufacturing processes
                 through the implementation of Lean Practices, Six Sigma, 5S
