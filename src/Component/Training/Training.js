@@ -19,6 +19,19 @@ const Training = () => {
           customized and personalized depending on your company, trainees, and
           the business objective of training.
         </p>
+        <div className="text-center mt-[30px]">
+        <h1 className="text-[35px] text-[#002266] font-bold leading-[40px]">
+                Management Systems and Efficiency Improvement
+              </h1>
+              <p className="mt-[20px] lg:text-[22px] mb-[20px]">
+                {" "}
+                We offer training solutions that improve manufacturing processes
+                through the implementation of Lean Practices, Six Sigma, 5S
+                methodologies, and more. The focus of these training modules is
+                on achieving continuous improvement and enabling organizations
+                to build a team that can sustain continuous growth.
+              </p>
+        </div>
         <div>
           <p className="text-center mt-[50px] lg:text-[22px] text-[#002266] font-bold">
             Below are a few of the functions we offer training modules in:
@@ -32,17 +45,7 @@ const Training = () => {
               />
             </div>
             <div>
-              <h1 className="text-[35px] text-[#002266] font-bold leading-[40px]">
-                Management Systems and Efficiency Improvement
-              </h1>
-              <p className="mt-[20px] lg:text-[22px] mb-[20px]">
-                {" "}
-                We offer training solutions that improve manufacturing processes
-                through the implementation of Lean Practices, Six Sigma, 5S
-                methodologies, and more. The focus of these training modules is
-                on achieving continuous improvement and enabling organizations
-                to build a team that can sustain continuous growth.
-              </p>
+
               <div className="grid lg:grid-cols-2 justify-center items-center gap-[15px] cursor-pointer">
                 {training?.map((tr) => (
                   <div className="mt-[20px]">
