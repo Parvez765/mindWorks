@@ -2,6 +2,7 @@ import React from "react";
 import training from "../../data/training";
 import skills from "../../data/softSkills";
 import sales from "../../data/sales";
+import "./Training.css"
 
 const Training = () => {
   return (
@@ -42,7 +43,7 @@ const Training = () => {
                 on achieving continuous improvement and enabling organizations
                 to build a team that can sustain continuous growth.
               </p>
-              <div className="grid lg:grid-cols-2 justify-center items-center gap-[15px]">
+              <div className="grid lg:grid-cols-2 justify-center items-center gap-[15px] cursor-pointer">
                 {training?.map((tr) => (
                   <div className="mt-[20px]">
                     <div className="flex items-center gap-[15px]">
@@ -51,7 +52,7 @@ const Training = () => {
                         className="w-[25px]"
                         alt="Mind Works Right Mark"
                       />
-                      <p className="text-[12px] 2xl:text-[22px] font-medium text-[#002060]">
+                      <p className="text-[12px] 2xl:text-[22px] font-medium text-[#002060] trainingName">
                         {tr.name}
                       </p>
                     </div>

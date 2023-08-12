@@ -177,7 +177,7 @@ const training = [
     {
         id: 37,
         img: "https://i.ibb.co/7kbQ8bj/correct.png",
-        name: "Lean Six Sigma Green Belt Training"
+        name: "Lean Six Sigma Black Belt Training"
     },
     {
         id: 38,

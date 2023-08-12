@@ -6,7 +6,7 @@ const Counter = () => {
     return (
         <div className='bgContainer'>
             <div className='container mx-auto'>
-                <h1 className="text-center seedText text-[35px] lg:text-[50px] text-white leading-[60px] mb-[12px]">Our Achievements To <br/>Lean Transformation</h1>
+                <h1 className="text-center seedText text-[35px] lg:text-[50px] text-white leading-[60px] mb-[12px]">Our Achievements Through <br/>Lean Transformation</h1>
                 <p className='lg:w-[850px] block mx-auto text-center font-medium text-white'>Our humble yet expert team members, specialise in Strategic, Tactical and Operational Leadership, clubbed with General Management and Executive Coaching background. We use a pragmatic systemic approach to analyse situations and facilitate to build implementable solutions. Some of the key achievements in numbers as below.</p>
             </div>
            <section className='container mx-auto'>
